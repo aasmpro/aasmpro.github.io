@@ -102,8 +102,9 @@ a:hover {
 }
 
 @media print {
-    html, body {
+    html, body, h1, p {
         background-color: #ffffff;
+        text-align: left;
     }
 
     .my-picture {
