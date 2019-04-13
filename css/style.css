@@ -1,41 +1,81 @@
-.color-h-dark-gray {
-    color: #2b2d42
+.text-h-dark-gray {
+    color: #2b2d42 !important;
 }
 
-.color-h-red {
-    color: #d90429
+.text-h-red {
+    color: #d90429 !important;
 }
 
-.color-h-gray {
-    color: #8d99ae
+.text-h-gray {
+    color: #8d99ae !important;
 }
 
-.color-h-light-gray {
-    color: #edf2f4
+.text-h-light-gray {
+    color: #edf2f4 !important;
 }
 
-.color-h-pink {
-    color: #ef233c
+.text-h-pink {
+    color: #ef233c !important;
 }
 
-.color-s-gray {
-    color: #50514f
+.text-s-gray {
+    color: #50514f !important;
 }
 
-.color-s-red {
-    color: #f25f5c
+.text-s-red {
+    color: #f25f5c !important;
 }
 
-.color-s-yellow {
-    color: #ffe066
+.text-s-yellow {
+    color: #ffe066 !important;
 }
 
-.color-s-blue {
-    color: #247ba0
+.text-s-blue {
+    color: #247ba0 !important;
 }
 
-.color-s-green {
-    color: #70c1b3
+.text-s-green {
+    color: #70c1b3 !important;
+}
+
+.bg-h-dark-gray {
+    background-color: #2b2d42 !important;
+}
+
+.bg-h-red {
+    background-color: #d90429 !important;
+}
+
+.bg-h-gray {
+    background-color: #8d99ae !important;
+}
+
+.bg-h-light-gray {
+    background-color: #edf2f4 !important;
+}
+
+.bg-h-pink {
+    background-color: #ef233c !important;
+}
+
+.bg-s-gray {
+    background-color: #50514f !important;
+}
+
+.bg-s-red {
+    background-color: #f25f5c !important;
+}
+
+.bg-s-yellow {
+    background-color: #ffe066 !important;
+}
+
+.bg-s-blue {
+    background-color: #247ba0 !important;
+}
+
+.bg-s-green {
+    background-color: #70c1b3 !important;
 }
 
 html,
@@ -72,34 +112,28 @@ a:hover {
     width: auto;
 }
 
-@media (min-width: 768px) {
-    .site-wrapper-inner {
-        vertical-align: middle;
-    }
-
-    .cover-container {
-        width: 100%;
-    }
+.toast {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
-@media (min-width: 992px) {
-    .cover-container {
-        width: 920px;
-    }
+.toast-body {
+    text-align: center;
+    background-color: #d90429;
+    padding: 6px;
 }
-
 
 @media (max-width: 768px) {
     h1, p {
         text-align: center;
     }
 
-    .links {
-        margin-top: 1em;
-    }
-
     .links a {
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin: 5px auto;
         width: 60px;
     }
@@ -138,5 +172,4 @@ a:hover {
         padding-top: 15px;
         border-top: 3px solid #000000;
     }
-
 }

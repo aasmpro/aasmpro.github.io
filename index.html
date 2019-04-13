@@ -32,13 +32,6 @@
     <!-- Custom styles for this template -->
     <link href="./css/style.css" rel="stylesheet">
 
-    <!-- Bootstrap core JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
 
     <!-- JSON-LD content -->
     <script type="application/ld+json">
@@ -97,15 +90,21 @@
         }
     </script>
 </head>
-
 <body>
+<div class="toast rounded-pill border-white d-print-none" role="alert" aria-live="assertive" aria-atomic="true"
+     data-autohide="true" data-delay="10000">
+    <div class="toast-body text-white" data-dismiss="toast" aria-label="Close">
+        Print this page to get my <strong class="mr-auto">Resume</strong>.
+    </div>
+</div>
+
 <div class="container h-100 d-print-none">
     <div class="row h-100 justify-content-center align-items-center">
         <div class="col-lg-3 col-md-5">
             <img class="img-fluid rounded-circle mt-3" src="./img/AbolfazlAmiri.jpg" alt="My Picture!">
         </div>
         <div class="col-md-7">
-            <h1 class="color-h-red">Abolfazl Amiri</h1>
+            <h1>Abolfazl Amiri</h1>
             <p class="text-justify">
                 Hello! I am a Pythonista, web developer and open source advocate with a passion for graphic
                 design. It is my mission in life to help people use their computers correctly and love them
@@ -118,7 +117,6 @@
                 Projects!
             </p>
             <p class="links">
-                <a href="Resume.Abolfazl.Amiri.pdf" title="Resume" class="text-link px-3">Resume</a>
                 <a href="tel:+989217214929" title="+989217214929"><i
                         class="fas fa-phone" aria-hidden="true"></i></a>
                 <a href="mailto:aasmpro@gmail.com" title="aasmpro@gmail.com"><i
@@ -129,8 +127,10 @@
                         class="fab fa-github-alt" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/aasmpro/" title="LinkedIn"><i
                         class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-                <a href="https://telegram.me/aasmpro/" title="LinkedIn"><i
+                <a href="https://telegram.me/aasmpro/" title="Telegram"><i
                         class="fab fa-telegram-plane" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/aasmpro" title="Twitter"><i
+                        class="fab fa-twitter" aria-hidden="true"></i></a>
             </p>
         </div>
     </div>
@@ -191,5 +191,21 @@
         </div>
     </div>
 </div>
+
+<!-- Bootstrap core JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $('.toast').toast('show');
+    });
+</script>
 </body>
 </html>
