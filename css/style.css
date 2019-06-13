@@ -137,6 +137,10 @@ a:hover {
         margin: 5px auto;
         width: 60px;
     }
+
+    #my-picture {
+        margin-top: 15px;
+    }
 }
 
 @media print {
@@ -171,5 +175,9 @@ a:hover {
         margin-top: 20px;
         padding-top: 15px;
         border-top: 3px solid #000000;
+    }
+
+    .experience {
+        margin-top: 20px;
     }
 }
