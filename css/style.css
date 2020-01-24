@@ -128,7 +128,9 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-    h1, p {
+
+    h1,
+    p {
         text-align: center;
     }
 
@@ -144,16 +146,23 @@ a:hover {
 }
 
 @media print {
-    html, body, h1, p {
+
+    html,
+    body,
+    h1,
+    p {
         background-color: #ffffff;
         text-align: left;
     }
 
     .my-picture {
+        width: 210px;
         border: 3px solid #000000;
     }
 
-    a, a:focus, a:hover {
+    a,
+    a:focus,
+    a:hover {
         color: #ffffff !important;
         background-color: #000000;
         text-decoration: none;
@@ -172,12 +181,12 @@ a:hover {
     }
 
     .resume-content {
-        margin-top: 20px;
+        margin-top: 30px;
         padding-top: 15px;
         border-top: 3px solid #000000;
     }
 
     .experience {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 }
