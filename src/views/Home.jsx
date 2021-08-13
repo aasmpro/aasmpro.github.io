@@ -10,7 +10,7 @@ export const Home = () => {
       <div className="min-h-screen flex flex-col justify-center items-center">
         <div className="sm:w-[500px] w-screen p-5 py-20 text-lg select-none">
           <p className="mb-4">
-            Hi! I'm Team Leader, Web Developer & Free/Open-Source software
+            Hi! I'm a Team Leader, Web Developer & Free/Open-Source software
             advocate.
           </p>
           <p className="mb-4">
