@@ -1,0 +1,20 @@
+@import "./fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply text-light-0;
+  font-family: JBM;
+}
+
+@media print {
+  html,
+  body {
+    background-color: #ffffff !important;
+  }
+  * {
+    @apply text-black;
+    font-family: JBM;
+  }
+}
