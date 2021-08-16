@@ -13,7 +13,7 @@ export const Char = (props) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setChar(randomChar());
+      setChar((char) => (char !== "*" ? randomChar() : "*"));
     }, Math.floor(Math.random() * 30000) + 4000);
     return () => clearInterval(interval);
     // eslint-disable-next-line
