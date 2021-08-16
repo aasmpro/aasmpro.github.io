@@ -12,7 +12,7 @@ const values = [
   ["ABOLFAZL", ""],
   ["A WEB", "DEVELOPER"],
   ["A TEAM", "  LEADER"],
-  ["A GHESS", "  LOVER"],
+  ["A CHESS", "  LOVER"],
   ["A PYTHON-", "  ISTA"],
   ["A GAMER", ""],
   ["A FOOD", "  LOVER"],

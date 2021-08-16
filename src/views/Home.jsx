@@ -28,14 +28,14 @@ export const Home = () => {
             <Link
               className="mx-2 px-2 bg-dark-0 rounded-full
               transition duration-300  hover:bg-black hover:ring-2 hover:ring-dark-0"
-              to="resume/">
+              to="/#resume">
               Resume
             </Link>
             and
             <Link
               className="mx-2 px-2 bg-dark-0 rounded-full
               transition duration-300  hover:bg-black hover:ring-2 hover:ring-dark-0"
-              to="projects/">
+              to="/#projects">
               Projects
             </Link>
             . also sometimes i write about things on my
