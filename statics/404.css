@@ -1,0 +1,77 @@
+@font-face {
+  font-family: JBM;
+  font-style: normal;
+  font-weight: 700;
+  src: url("JetBrainsMono-Bold.ttf") format("truetype");
+  src: url("JetBrainsMono-Bold.woff2") format("woff2");
+}
+
+*,
+::after,
+::before {
+  color: rgba(249, 245, 215, 1);
+  font-family: JBM;
+  border: 0 solid;
+  border-top-color: currentcolor;
+  border-right-color: currentcolor;
+  border-bottom-color: currentcolor;
+  border-left-color: currentcolor;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #000000;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.text-dark-0 {
+  color: rgba(29, 32, 33, 1);
+}
+
+.text-light-0 {
+  color: rgba(249, 245, 215, 1);
+}
+
+.text-2xl {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.px-2 {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.select-none {
+  user-select: none;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
