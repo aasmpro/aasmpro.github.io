@@ -6,14 +6,18 @@ export const Char = (props) => {
   const [char, setChar] = useState(randomChar());
 
   const changeColor = () => {
-    if (char === "*") {
-      setColor("text-red-0");
+    if (char === "0" || char === "1") {
+      if (color === "text-red-0") {
+        setColor("text-dark-0");
+      } else {
+        setColor("text-red-0");
+      }
     }
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setChar((char) => (char !== "*" ? randomChar() : "*"));
+      setChar((char) => (char !== "0" && char !== "1" ? randomChar() : char));
     }, Math.floor(Math.random() * 30000) + 4000);
     return () => clearInterval(interval);
     // eslint-disable-next-line
