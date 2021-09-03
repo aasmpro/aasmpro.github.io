@@ -18,7 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "css": "TAILWIND_MODE=watch postcss src/assets/styles/main.css -o src/assets/styles/main.min.css --watch --verbose",
-    "deploy": "yarn run build:css && yarn run build && gh-pages -d build"
+    "deploy": "yarn run build:css && yarn run build && gh-pages -d build",
+    "gh-pages": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

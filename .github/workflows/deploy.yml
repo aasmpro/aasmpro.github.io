@@ -12,7 +12,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
-      - run: npm install
-      - run: npm run build:css
-      - run: npm run build
-      - run: gh-pages -d build
+          cache: 'yarn'
+      - run: yarn install
+      - run: yarn run build:css
+      - run: yarn run build
+      - run: yarn run gh-pages
