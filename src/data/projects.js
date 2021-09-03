@@ -6,7 +6,7 @@ export const projects = [
       "Contains these titles: Introduction, History, Features, Versions, 2 vs 3, Installation, PIP, Basic Syntax, Numbers, Strings, Lists, Tuples, Dictionaries, Conditionals, Loops, Functions, Files, Exceptions, Modules, OOP, Tips & Tools.",
       "The repository includes MD, ODP, PDF, and python example files, alongside site files. all coming in dark and light themes.",
     ],
-    stack: ["JS", "Vue", "markdown"],
+    stack: ["Python", "mkdocs", "GruvDoc", "mkdocs-material"],
     links: [
       {
         title: "abolfazlamiri.ir/python3tutorials/",
