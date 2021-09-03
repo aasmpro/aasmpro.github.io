@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: git config --global user.email "aa.smpro@gmail.com"
+      - run: git config --global user.name "Abolfazl Amiri"
+      
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
