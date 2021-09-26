@@ -8,6 +8,8 @@ charsMatrix[15][26] = <Char value="I" />;
 charsMatrix[15][27] = <Char value="'" />;
 charsMatrix[15][28] = <Char value="M" />;
 
+charsMatrix[22][30] = <Char value="↓" />;
+
 const values = [
   ["ABOLFAZL", ""],
   ["A WEB", "DEVELOPER"],

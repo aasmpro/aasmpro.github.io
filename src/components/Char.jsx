@@ -24,6 +24,15 @@ export const Char = (props) => {
   }, []);
 
   if (props.value) {
+    if (props.value === "↓") {
+      return (
+        <a href="#info" title="scroll down!">
+          <span className="select-none px-2 text-2xl font-bold text-light-0 mr-3.5">
+            <span className="animate-bounce absolute mt-1">{props.value}</span>
+          </span>
+        </a>
+      );
+    }
     return (
       <span className="select-none px-2 text-2xl font-bold text-light-0">
         {props.value}

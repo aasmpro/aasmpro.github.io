@@ -9,8 +9,8 @@ export const Resume = () => {
         <div className="mb-5 p-4 border-dark-0 border-b-2 print:hidden">
           <div className="flex justify-between">
             <Link
-              className="px-2 bg-dark-0 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-dark-0"
+              className="px-2 bg-light-1 rounded-full text-dark-0 hover:text-light-0
+              transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1"
               to="/">
               Home
             </Link>
