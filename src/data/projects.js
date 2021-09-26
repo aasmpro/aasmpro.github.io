@@ -5,7 +5,7 @@ export const projects = [
       "Starter to intermediate python 3 tutorials with examples. Including: Features, Basic Syntax, Data Structures, Functions, Modules, OOP, etc.",
       "The repository includes MD, ODP, PDF and python example files. with dark and light themes.",
     ],
-    stack: ["Python", "mkdocs", "GruvDoc", "mkdocs-material"],
+    stack: ["Python", "mkdocs", "GruvDoc"],
     links: [
       {
         title: "abolfazlamiri.ir/python3tutorials/",
