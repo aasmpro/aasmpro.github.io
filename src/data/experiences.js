@@ -7,9 +7,9 @@ export const experiences = [
     type: "Full-time",
     location: "Isfahan, Iran",
     about: [
-      "Developing an online platform for car parts and services which includes multiple web apps for Drives, ServiceCenters, Agents, and Sellers. Also developing paperless management and financial systems & third-party microservices for logistics.",
-      "This platform has multiple products like oil, filter, battery, engine parts, wires, etc, and services like carwash.",
-      "With 5 different types of delivery/service solutions per product, Service Centers Service, Service Centers Delivery, Location Service, Location Delivery, Location Post, it is the largest online platform for Car parts and services in Iran.",
+      "Developing an online platform for car parts and services which includes multiple web apps for Drives, ServiceCenters, Agents, Sellers, Logistics and Financial systems.",
+      "This platform offers multiple products like oil, filter, battery, engine parts, wires, etc, and services like carwash.",
+      "With 7 different types of delivery/service solutions per product, it is the largest online platform for Car parts and services in Iran.",
     ],
     stack: [
       "Python",

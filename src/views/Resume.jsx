@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { about, skills, experiences, projects } from "../data";
+import { skills, experiences } from "../data";
 
 export const Resume = () => {
   return (
@@ -24,9 +24,9 @@ export const Resume = () => {
         </div>
         <div className="px-5 print:!p-0 divide-y-2 divide-dark-0">
           <div className="pb-4">
-            <p className="text-3xl font-bold">Abolfazl Amiri</p>
-            <p className="text-xl">Python & Web Developer</p>
-            <div className="mt-3 flex flex-col text-sm sm:flex-row">
+            <p className="print:text-3xl text-3xl font-bold">Abolfazl Amiri</p>
+            <p className="print:text-xl text-xl">Python & Web Developer</p>
+            <div className="mt-3 flex flex-col print:text-sm sm:flex-row">
               <div className="sm:w-4/12">
                 <p className="mb-2">
                   <a href="https://abolfazlamiri.ir">
@@ -48,7 +48,7 @@ export const Resume = () => {
                 </p>
                 <p>
                   <a href="https://github.com/aasmpro">
-                    <i class="fab fa-github-alt mr-4 text-light-5 print:text-black" />
+                    <i class="fab fa-github-alt mr-4 text-light-2 print:text-black" />
                   </a>
                   <a href="https://stackoverflow.com/users/6484831/aasmpro">
                     <i class="fab fa-stack-overflow mr-4 text-orange-0" />
@@ -67,36 +67,43 @@ export const Resume = () => {
               </div>
             </div>
           </div>
-          <div className="py-4 text-sm">
-            <p className="text-xl mb-4 font-bold">About Me</p>
-            {about.map((line) => (
-              <p>{line}</p>
-            ))}
+          <div className="py-4 print:text-sm">
+            <p className="mb-4 print:text-xl text-xl font-bold">About Me</p>
+            Hi! I'm a Team Leader, Web Developer & Free/Open-Source software
+            advocate. Currently working as CTO at{" "}
+            <a href="https://snappcarfix.com" className="text-blue-0 font-bold">
+              SnappCarFix
+            </a>
+            , the largest online platform for car parts and services in Iran.
           </div>
-          <div className="py-4 text-sm">
-            <p className="text-xl mb-4 font-bold">Skills</p>
-            <ul class="list-disc pl-4 grid grid-cols-2 sm:grid-cols-3">
+          <div className="py-4 print:text-sm">
+            <p className="mb-4 print:text-xl text-xl font-bold">Skills</p>
+            <ul class="list-disc pl-4 grid sm:grid-cols-2 md:grid-cols-3 print:sm:grid-cols-3">
               {skills.map((skill) => (
                 <li>{skill}</li>
               ))}
             </ul>
           </div>
-          <div className="py-4 text-sm">
-            <p className="text-xl mb-4 font-bold">Experiences</p>
+          <div className="py-4 print:text-sm">
+            <p className="mb-4 print:text-xl text-xl font-bold">Experiences</p>
             <div>
               {experiences
                 .filter((exp) => exp.showExperiences)
                 .map((exp) => (
                   <div className="py-2 first:pt-0">
                     <div>
-                      <p className="text-lg font-semibold">{exp.title}</p>
-                      <p className="text-base font-semibold">{exp.company}</p>
-                      <p className="text-xs font-semibold">
+                      <p className="print:text-lg text-lg font-semibold">
+                        {exp.title}
+                      </p>
+                      <p className="print:text-base font-semibold">
+                        {exp.company}
+                      </p>
+                      <p className="print:text-xs text-sm font-semibold">
                         {exp.startDate} - {exp.endDate} | {exp.type} |{" "}
                         {exp.location}
                       </p>
                     </div>
-                    <div className="text-xs">
+                    <div className="print:text-xs text-sm">
                       {exp.stack.map((stack) => (
                         <span className="text-green-1 print:text-green-0 font-semibold">
                           {stack},{" "}
@@ -110,9 +117,9 @@ export const Resume = () => {
                     </div>
                     {exp.links ? (
                       <div>
-                        <ul class="list-disc pl-3 text-sm">
+                        <ul class="list-disc pl-4 grid sm:grid-cols-2 md:grid-cols-3 print:sm:grid-cols-3">
                           {exp.links.map((link) => (
-                            <li className="text-blue-0 font-semibold my-0.5 first:mt-0">
+                            <li className="text-blue-0 my-0.5 first:mt-0 font-bold">
                               <a href={link.href}>{link.title}</a>
                             </li>
                           ))}
@@ -123,7 +130,30 @@ export const Resume = () => {
                 ))}
             </div>
           </div>
-          <div className="py-4 text-sm">
+          <div className="py-4 print:text-sm">
+            <p className="mb-4 print:text-xl text-xl font-bold">Projects</p>
+            <div>
+              Check out my site & Github for projects.
+              <ul class="list-disc pl-4 mt-2">
+                <li className="text-blue-0 my-0.5 first:mt-0 font-bold">
+                  <a
+                    href="https://abolfazlamiri.ir/#projects"
+                    className="text-blue-0 font-bold">
+                    abolfazlamiri.ir/#Projects
+                  </a>
+                </li>
+                <li className="text-blue-0 my-0.5 first:mt-0 font-bold mt-1">
+                  <a
+                    href="https://github.com/aasmpro"
+                    className="text-blue-0 font-bold">
+                    github.com/aasmpro
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* Note: Projects been commented instead of been removed from resume */}
+          {/* <div className="py-4 text-sm">
             <p className="text-xl mb-3 font-bold">Projects</p>
             <div>
               {projects
@@ -160,8 +190,9 @@ export const Resume = () => {
                   </div>
                 ))}
             </div>
-          </div>
+          </div> */}
         </div>
+        <div className="print:hidden pb-20"></div>
       </div>
     </div>
   );
