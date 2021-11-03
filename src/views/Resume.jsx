@@ -2,6 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { skills, experiences } from "../data";
 
+// Fixme
+// 
+// must add following values too:
+// birth-date / location / marriage / military / education
+// 
+// make experiences like:
+// work/comp desc / things and tasks being done with statistics
+// 
+// make links look better
+// add some shapes or backgrounds
+// maybe decrease the font-size
+
 export const Resume = () => {
   return (
     <div className="flex flex-col items-center">
@@ -29,37 +41,41 @@ export const Resume = () => {
             <div className="mt-3 flex flex-col print:text-sm sm:flex-row">
               <div className="sm:w-4/12">
                 <p className="mb-2">
-                  <a href="https://abolfazlamiri.ir">
+                  <a href="https://abolfazlamiri.ir" title="Webpage">
                     <i class="fas fa-globe-americas text-blue-0" />{" "}
                     abolfazlamiri.ir
                   </a>
                 </p>
                 <p>
-                  <a href="tel:+989217214929">
+                  <a href="tel:+989217214929" title="Phone">
                     <i class="fas fa-phone text-blue-0" /> +989217214929
                   </a>
                 </p>
               </div>
               <div>
                 <p className="mb-2 mt-2 sm:mt-0">
-                  <a href="mailto:aasmpro@gmail.com">
+                  <a href="mailto:aasmpro@gmail.com" title="Mail">
                     <i class="fas fa-at text-red-0" /> aasmpro@gmail.com
                   </a>
                 </p>
                 <p>
-                  <a href="https://github.com/aasmpro">
+                  <a href="https://github.com/aasmpro" title="Github">
                     <i class="fab fa-github-alt mr-4 text-light-2 print:text-black" />
                   </a>
-                  <a href="https://stackoverflow.com/users/6484831/aasmpro">
+                  <a
+                    href="https://stackoverflow.com/users/6484831/aasmpro"
+                    title="StackOverflow">
                     <i class="fab fa-stack-overflow mr-4 text-orange-0" />
                   </a>
-                  <a href="https://www.linkedin.com/in/aasmpro/">
+                  <a
+                    href="https://www.linkedin.com/in/aasmpro/"
+                    title="LinkedIn">
                     <i class="fab fa-linkedin-in mr-4 text-blue-0" />
                   </a>
-                  <a href="https://twitter.com/aasmpro">
+                  <a href="https://twitter.com/aasmpro" title="Twitter">
                     <i class="fab fa-twitter mr-4 text-blue-0" />
                   </a>
-                  <a href="https://telegram.me/aasmpro/">
+                  <a href="https://telegram.me/aasmpro/" title="Telegram">
                     <i class="fab fa-telegram-plane mr-4 text-blue-0" />
                   </a>
                   aasmpro
@@ -74,7 +90,15 @@ export const Resume = () => {
             <a href="https://snappcarfix.com" className="text-blue-0 font-bold">
               SnappCarFix
             </a>
-            , the largest online platform for car parts and services in Iran.
+            , the largest online platform for car parts and services in Iran. I
+            have around 5 years of experience in software development especially
+            in Web Development and about 2 years on leading Tech teams. I always
+            try in addition to develop a clean scalable code, by communicating
+            closely with end-users, develop user experience, and create new
+            values too. I can easily make strong sincere relations with my
+            colleagues and team and help them to develop themselves. I'm a
+            self-learner, without prejudice on tools and stacks being used and
+            ready to learn and use new technologies.
           </div>
           <div className="py-4 print:text-sm">
             <p className="mb-4 print:text-xl text-xl font-bold">Skills</p>
