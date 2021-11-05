@@ -7,9 +7,19 @@ export const experiences = [
     type: "Full-time",
     location: "Isfahan, Iran",
     about: [
-      "Developing an online platform for car parts and services which includes multiple web apps for Drives, ServiceCenters, Agents, Sellers, Logistics and Financial systems.",
-      "This platform offers multiple products like oil, filter, battery, engine parts, wires, etc, and services like carwash.",
-      "With 7 different types of delivery/service solutions per product, it is the largest online platform for Car parts and services in Iran.",
+      "SnappCarFix is an online platform for Car parts and services, backed by Snapp Group as a joint-venture.",
+      "This platform includes multiple web apps for Stores, Service Centers, Agents, Sellers, to offer products/services like oil, filter, battery, engine parts, car wash, etc.",
+      "Customers will buy products/services online and get an appointment from one of our service centers or specify a date to deliver. the service centers account will be charged after doing services, which they can buy same or other products with lower prices from us.",
+      "With more than a million active users, 15,000 service centers, and 7 delivery/service solutions per product, it is the largest online platform for Car parts and services in Iran.",
+    ],
+    responsible: "I am responsible for:",
+    responsibilities: [
+      "Leading and forming developers teams",
+      "Specifying the technical structure and tools to be used in the development",
+      "Managing and targeting technical parts of contracts",
+      "Developing core and backend projects using Python/Django",
+      "Developing 5 web apps using JS/TS/React",
+      "Developing multiple internal admin panels",
     ],
     stack: [
       "Python",
@@ -23,18 +33,16 @@ export const experiences = [
       "Celery",
       "Kubernetes",
       "Docker",
-      "Gitlab CI/CD",
-      "Metabase",
     ],
     links: [
       {
         title: "snappcarfix.com",
         href: "https://snappcarfix.com",
       },
-      {
-        title: "se.snappcarfix.com",
-        href: "https://se.snappcarfix.com",
-      },
+      // {
+      //   title: "se.snappcarfix.com",
+      //   href: "https://se.snappcarfix.com",
+      // },
       {
         title: "ag.t2bon.com",
         href: "https://ag.t2bon.com",
@@ -58,8 +66,15 @@ export const experiences = [
     type: "Part-time (Remote)",
     location: "Ontario, Canada",
     about: [
-      "Developing multiple platforms for monitoring & measuring contextual feedback in real-time. These platforms could gather data from multiple sources like Terminals and Chips our company created or from SMS, Email, QR code, Voice, etc.",
+      "Press'nXPress consists of multiple platforms for monitoring & measuring feedbacks in real-time. These platforms could gather data from multiple sources like Terminals and Chips our company created or from SMS, Email, QR code, Voice, etc.",
       "The data can be multiple choices questions with additional `why` answers, these data will be stored and be analyzed in real-time to multiple charts and are accessible in the user dashboard. We had customers from Airlines, Governments, Malls, to Gyms and Stores.",
+    ],
+    responsible: "I was responsible for:",
+    responsibilities: [
+      "Developing backend for scanortap with NestJS",
+      "Developing frontend projects of main and admin panel on scanortap",
+      "Rewriting some backend modules from SailJS to NestJS",
+      "Rewriting some parts of frontend from Angular to React",
     ],
     stack: ["JS/TS", "NestJS", "React", "Angular", "MySQL"],
     links: [
@@ -82,8 +97,15 @@ export const experiences = [
     type: "Part-time",
     location: "Isfahan, Iran",
     about: [
-      "Developing a platform for car consumables which includes multiple web/mobile apps for ServiceCenters, Agents, and Stores.",
-      "This Company later merged with Snapp as SnappCarFix.",
+      "A platform for car consumables which includes multiple web/mobile apps for ServiceCenters, Agents, and Stores. The main goal of this platform was to sell oil and related products to service centers with great offers, while also it guaranteed to increase their customers with online shops for customers.",
+      "This Company later merged with Snapp as SnappCarFix and i'm working as CTO there.",
+    ],
+    responsible: "I was responsible for:",
+    responsibilities: [
+      "Refactoring and restructuring main backend project with Python/Django",
+      "Developing a microservice to manage sales and services between stores and the main platform",
+      "Developing accounting and logistic modules",
+      "Developing a messaging module for a real-time chat in apps",
     ],
     stack: ["Python", "Django", "JS/TS", "React", "ReactNative"],
     links: [
@@ -119,6 +141,11 @@ export const experiences = [
       "The learning process includes Backend, Frontend, Database Design, DevOps, Software Architecture, Agile, Git, and Testing alongside soft skills like Teamwork, Professional Behavior, Presentation skills, etc.",
       "We developed an image-based social media app for mobile devices with a combination of Instagram and Pinterest features, which we named AkasKhoone.",
     ],
+    responsible: "I was responsible for:",
+    responsibilities: [
+      "Developing and leading backend project using Python/Django",
+      "Configuring the server and deploying the project",
+    ],
     stack: ["Python", "Django", "JS/TS", "ReactNative", "MySQL", "Redis"],
     links: [
       {
@@ -142,6 +169,13 @@ export const experiences = [
     about: [
       "This is my first professional development experience. our main product was a location-based delivery and management application for malls and stores. the platform also included delivery with drones.",
       "Also, we developed paperless automation systems for the government departments. Unfortunately, this company went bankrupt because of a lack of funding after two years.",
+    ],
+    responsible: "I was responsible for:",
+    responsibilities: [
+      "Developing parts of the main platform with Python/Django",
+      "Developing APIs for our android app",
+      "Developing admin panels",
+      "Developing frontend of 2 web sites",
     ],
     stack: ["Python", "Django", "JS", "HTML", "CSS", "MySQL"],
     links: [],

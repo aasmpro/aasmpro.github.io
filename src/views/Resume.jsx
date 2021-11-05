@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { skills, experiences } from "../data";
 
 // Fixme
-// 
+//
 // must add following values too:
 // birth-date / location / marriage / military / education
-// 
+//
 // make experiences like:
 // work/comp desc / things and tasks being done with statistics
-// 
+//
 // make links look better
 // add some shapes or backgrounds
 // maybe decrease the font-size
@@ -136,18 +136,27 @@ export const Resume = () => {
                     </div>
                     <div className="mt-2 mb-2">
                       {exp.about.map((line) => (
-                        <p>{line}</p>
+                        <span>{line}</span>
                       ))}
                     </div>
+                    <div className="mt-2 mb-2">
+                      <p>{exp.responsible}</p>
+                      <ul class="list-disc pl-4">
+                        {exp.responsibilities.map((line) => (
+                          <li>{line}</li>
+                        ))}
+                      </ul>
+                    </div>
                     {exp.links ? (
-                      <div>
-                        <ul class="list-disc pl-4 grid sm:grid-cols-2 md:grid-cols-3 print:sm:grid-cols-3">
-                          {exp.links.map((link) => (
-                            <li className="text-blue-0 my-0.5 first:mt-0 font-bold">
-                              <a href={link.href}>{link.title}</a>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="flex flex-row flex-wrap">
+                        {exp.links.map((link) => (
+                          <a
+                            className="px-3 py-0.5 mx-1 my-1 font-bold bg-blue-0 rounded-full print:text-light-0
+                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
+                            href={link.href}>
+                            {link.title}
+                          </a>
+                        ))}
                       </div>
                     ) : null}
                   </div>
@@ -158,22 +167,20 @@ export const Resume = () => {
             <p className="mb-4 print:text-xl text-xl font-bold">Projects</p>
             <div>
               Check out my site & Github for projects.
-              <ul class="list-disc pl-4 mt-2">
-                <li className="text-blue-0 my-0.5 first:mt-0 font-bold">
-                  <a
-                    href="https://abolfazlamiri.ir/#projects"
-                    className="text-blue-0 font-bold">
-                    abolfazlamiri.ir/#Projects
-                  </a>
-                </li>
-                <li className="text-blue-0 my-0.5 first:mt-0 font-bold mt-1">
-                  <a
-                    href="https://github.com/aasmpro"
-                    className="text-blue-0 font-bold">
-                    github.com/aasmpro
-                  </a>
-                </li>
-              </ul>
+              <div class="flex flex-row flex-wrap mt-2">
+                <a
+                  href="https://abolfazlamiri.ir/#projects"
+                  className="px-3 py-0.5 mx-1 my-1 font-bold bg-blue-0 rounded-full print:text-light-0
+                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0">
+                  abolfazlamiri.ir/#Projects
+                </a>
+                <a
+                  href="https://github.com/aasmpro"
+                  className="px-3 py-0.5 mx-1 my-1 font-bold bg-blue-0 rounded-full print:text-light-0
+                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0">
+                  github.com/aasmpro
+                </a>
+              </div>
             </div>
           </div>
           {/* Note: Projects been commented instead of been removed from resume */}
