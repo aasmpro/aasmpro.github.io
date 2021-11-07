@@ -40,14 +40,15 @@ export const Home = () => {
               to="/#projects">
               Projects
             </Link>
-            . also sometimes i write about things on my
+            . 
+            {/* also sometimes i write about things on my
             <Link
               className="mx-2 px-2 bg-light-1 rounded-full text-dark-0 hover:text-light-0
               transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1"
               to="blog/">
               Blog
             </Link>
-            .
+            . */}
           </p>
           <p className="mb-4">
             I am available to
