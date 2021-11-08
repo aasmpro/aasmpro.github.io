@@ -1,8 +1,8 @@
 export const skills = [
   "Python",
-  "Django, NestJS",
+  "Django",
   "JS, TS",
-  "React, Vue",
+  "React",
   "Sass, Tailwind",
   "A bit DevOps",
 ];

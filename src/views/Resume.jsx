@@ -41,67 +41,100 @@ export const Resume = () => {
             <div className="mt-3 flex flex-col print:text-sm sm:flex-row">
               <div className="sm:w-4/12">
                 <p className="mb-2">
-                  <a href="https://abolfazlamiri.ir" title="Webpage">
-                    <i class="fas fa-globe-americas text-blue-0" />{" "}
+                  <a
+                    className="px-3 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
+                    href="https://abolfazlamiri.ir"
+                    title="Webpage">
+                    <i class="fas fa-globe-americas text-light-0" />{" "}
                     abolfazlamiri.ir
                   </a>
                 </p>
                 <p>
-                  <a href="tel:+989217214929" title="Phone">
-                    <i class="fas fa-phone text-blue-0" /> +989217214929
+                  <a
+                    className="px-3 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
+                    href="tel:+989217214929"
+                    title="Phone">
+                    <i class="fas fa-phone text-light-0" /> +989217214929
                   </a>
                 </p>
               </div>
               <div>
                 <p className="mb-2 mt-2 sm:mt-0">
-                  <a href="mailto:aasmpro@gmail.com" title="Mail">
-                    <i class="fas fa-at text-red-0" /> aasmpro@gmail.com
+                  <a
+                    className="px-3 py-0.5 font-bold bg-red-0 rounded-full print:text-light-0
+                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-red-0"
+                    href="mailto:aasmpro@gmail.com"
+                    title="Email">
+                    <i class="fas fa-at text-light-0" /> aasmpro@gmail.com
                   </a>
                 </p>
                 <p>
-                  <a href="https://github.com/aasmpro" title="Github">
-                    <i class="fab fa-github-alt mr-4 text-light-2 print:text-black" />
+                  <a
+                    className="px-4 mr-2 py-0.5 font-bold bg-dark-2 rounded-full print:text-light-0
+                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-dark-2"
+                    href="https://github.com/aasmpro"
+                    title="Github">
+                    <i class="fab fa-github-alt text-light-0" />
                   </a>
                   <a
+                    className="px-4 mr-2 py-0.5 font-bold bg-orange-0 rounded-full print:text-light-0
+                  transition duration-300 hover:bg-black hover:ring-2 hover:ring-orange-0"
                     href="https://stackoverflow.com/users/6484831/aasmpro"
-                    title="StackOverflow">
-                    <i class="fab fa-stack-overflow mr-4 text-orange-0" />
+                    title="Stackoverflow">
+                    <i class="fab fa-stack-overflow text-light-0" />
                   </a>
                   <a
+                    className="px-4 mr-2 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                  transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
                     href="https://www.linkedin.com/in/aasmpro/"
-                    title="LinkedIn">
-                    <i class="fab fa-linkedin-in mr-4 text-blue-0" />
+                    title="Linkedin">
+                    <i class="fab fa-linkedin-in text-light-0" />
                   </a>
-                  <a href="https://twitter.com/aasmpro" title="Twitter">
-                    <i class="fab fa-twitter mr-4 text-blue-0" />
+                  <a
+                    className="px-4 mr-2 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                  transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
+                    href="https://twitter.com/aasmpro"
+                    title="Twitter">
+                    <i class="fab fa-twitter text-light-0" />
                   </a>
-                  <a href="https://telegram.me/aasmpro/" title="Telegram">
-                    <i class="fab fa-telegram-plane mr-4 text-blue-0" />
+                  <a
+                    className="px-4 mr-2 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                  transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
+                    href="https://telegram.me/aasmpro/"
+                    title="Telegram">
+                    <i class="fab fa-telegram-plane text-light-0" />
                   </a>
-                  aasmpro
                 </p>
               </div>
             </div>
           </div>
           <div className="py-4 print:text-sm">
-            <p className="mb-4 print:text-xl text-xl font-bold">About Me</p>
-            Hi! I'm a Team Leader, Web Developer & Free/Open-Source software
-            advocate. Currently working as CTO at{" "}
+            <p className="mb-3 print:text-xl text-xl font-bold">About Me</p>
+            Hi! I'm a Team Leader & Web Developer, currently working as CTO at{" "}
             <a href="https://snappcarfix.com" className="text-blue-0 font-bold">
               SnappCarFix
             </a>
             , the largest online platform for car parts and services in Iran. I
-            have around 5 years of experience in software development especially
-            in Web Development and about 2 years on leading Tech teams. I always
-            try in addition to develop a clean scalable code, by communicating
-            closely with end-users, develop user experience, and create new
-            values too. I can easily make strong sincere relations with my
-            colleagues and team and help them to develop themselves. I'm a
-            self-learner, without prejudice on tools and stacks being used and
-            ready to learn and use new technologies.
+            have around 5 years of experience in software development mainly in
+            Web Development and about 2 years of leading the tech teams. I
+            always try to enhance user experience and create new values in my
+            work in addition to delivering a clean scalable code, by being
+            closely in touch with the end-users. I can easily make strong
+            sincere relations with my colleagues and team and help them to
+            develop themselves. I'm a self-learner, without prejudice on tools
+            and tech stacks, and ready to learn new things.
+            <ul class="list-disc pl-4 pt-2 grid md:grid-cols-2 print:sm:grid-cols-2">
+              <li>Education: B.S. Computer Engineering</li>
+              <li>Marriage: Single</li>
+              <li>Military Service: Exempted</li>
+              <li>Birth Date: 22 Feb 1996</li>
+            </ul>
           </div>
           <div className="py-4 print:text-sm">
-            <p className="mb-4 print:text-xl text-xl font-bold">Skills</p>
+            <p className="mb-3 print:text-xl text-xl font-bold">Skills</p>
+            <p className="mb-2">In summary, i have experience in working with these tools and often use them:</p>
             <ul class="list-disc pl-4 grid sm:grid-cols-2 md:grid-cols-3 print:sm:grid-cols-3">
               {skills.map((skill) => (
                 <li>{skill}</li>
@@ -109,7 +142,7 @@ export const Resume = () => {
             </ul>
           </div>
           <div className="py-4 print:text-sm">
-            <p className="mb-4 print:text-xl text-xl font-bold">Experiences</p>
+            <p className="mb-3 print:text-xl text-xl font-bold">Experiences</p>
             <div>
               {experiences
                 .filter((exp) => exp.showExperiences)
@@ -164,7 +197,7 @@ export const Resume = () => {
             </div>
           </div>
           <div className="py-4 print:text-sm">
-            <p className="mb-4 print:text-xl text-xl font-bold">Projects</p>
+            <p className="mb-3 print:text-xl text-xl font-bold">Projects</p>
             <div>
               Check out my site & Github for projects.
               <div class="flex flex-row flex-wrap mt-2">
