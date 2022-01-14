@@ -4,5 +4,8 @@ export const skills = [
   "JS, TS",
   "React",
   "Sass, Tailwind",
-  "A bit DevOps",
+  "Docker",
+  "GitHub/GitLab CI/CD",
+  "Linux Servers",
+  "A Bit DevOps ;)",
 ];

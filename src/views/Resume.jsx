@@ -111,30 +111,37 @@ export const Resume = () => {
             </div>
           </div>
           <div className="py-4 print:text-sm">
-            <p className="mb-3 print:text-xl text-xl font-bold">About Me</p>
-            Hi! I'm a Team Leader & Web Developer, currently working as CTO at{" "}
-            <a href="https://snappcarfix.com" className="text-blue-0 font-bold">
-              SnappCarFix
-            </a>
-            , the largest online platform for car parts and services in Iran. I
-            have around 5 years of experience in software development mainly in
-            Web Development and about 2 years of leading the tech teams. I
-            always try to enhance user experience and create new values in my
-            work in addition to delivering a clean scalable code, by being
-            closely in touch with the end-users. I can easily make strong
-            sincere relations with my colleagues and team and help them to
-            develop themselves. I'm a self-learner, without prejudice on tools
-            and tech stacks, and ready to learn new things.
-            <ul class="list-disc pl-4 pt-2 grid md:grid-cols-2 print:sm:grid-cols-2">
-              <li>Education: B.S. Computer Engineering</li>
-              <li>Marriage: Single</li>
-              <li>Military Service: Exempted</li>
-              <li>Birth Date: 22 Feb 1996</li>
-            </ul>
+            <p className="mb-3 print:text-xl text-2xl font-bold">About Me</p>
+            <div className="text-justify">
+              Hi! I'm a Team Leader & Web Developer, currently working as CTO at{" "}
+              <a
+                href="https://snappcarfix.com"
+                className="text-blue-0 font-bold">
+                SnappCarFix
+              </a>
+              , the largest online platform for car parts and services in Iran.
+              I have around 5 years of experience in software development mainly
+              in Web Development, more than 2 years of leading the tech teams.
+              My aim is to enhance user experience and create new values in
+              addition to delivering a clean scalable code, by being closely in
+              touch with the end-users. I can easily make strong sincere
+              relations with my team and help them to develop themselves. I'm a
+              self-learner, without prejudice on tools and tech stacks, and
+              ready for new challenges.
+              <ul class="list-disc pl-4 pt-2 grid md:grid-cols-2 print:sm:grid-cols-2">
+                <li>Education: B.S. Computer Engineering</li>
+                <li>Marriage: Single</li>
+                <li>Military Service: Exempted</li>
+                <li>Birth Date: 22 Feb 1996</li>
+              </ul>
+            </div>
           </div>
           <div className="py-4 print:text-sm">
-            <p className="mb-3 print:text-xl text-xl font-bold">Skills</p>
-            <p className="mb-2">In summary, i have experience in working with these tools and often use them:</p>
+            <p className="mb-3 print:text-xl text-2xl font-bold">Skills</p>
+            <p className="mb-2">
+              In summary, i have experience working with these tools and often
+              use them:
+            </p>
             <ul class="list-disc pl-4 grid sm:grid-cols-2 md:grid-cols-3 print:sm:grid-cols-3">
               {skills.map((skill) => (
                 <li>{skill}</li>
@@ -142,7 +149,7 @@ export const Resume = () => {
             </ul>
           </div>
           <div className="py-4 print:text-sm">
-            <p className="mb-3 print:text-xl text-xl font-bold">Experiences</p>
+            <p className="mb-3 print:text-xl text-2xl font-bold">Experiences</p>
             <div>
               {experiences
                 .filter((exp) => exp.showExperiences)
@@ -167,29 +174,52 @@ export const Resume = () => {
                         </span>
                       ))}
                     </div>
-                    <div className="mt-2 mb-2">
+                    <div className="mt-2 mb-2 text-justify">
                       {exp.about.map((line) => (
-                        <span>{line}</span>
+                        <span> {line}</span>
                       ))}
                     </div>
-                    <div className="mt-2 mb-2">
-                      <p>{exp.responsible}</p>
-                      <ul class="list-disc pl-4">
-                        {exp.responsibilities.map((line) => (
-                          <li>{line}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    {exp.links ? (
+                    {exp.links?.length > 0 ? (
                       <div className="flex flex-row flex-wrap">
                         {exp.links.map((link) => (
                           <a
                             className="px-3 py-0.5 mx-1 my-1 font-bold bg-blue-0 rounded-full print:text-light-0
-                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
+                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0
+                            print:text-sm print:px-2 print:py-0"
                             href={link.href}>
                             {link.title}
                           </a>
                         ))}
+                      </div>
+                    ) : null}
+                    {exp.responsibilities?.length > 0 ? (
+                      <div className="mt-2 mb-2 print:text-sm text-justify">
+                        <p>{exp.responsible}</p>
+                        <ul class="list-disc pl-4">
+                          {exp.responsibilities.map((line) => (
+                            <li>{line}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+                    {exp.contributions?.length > 0 ? (
+                      <div className="mt-2 mb-2 print:text-sm text-justify">
+                        <p>{exp.contribution}</p>
+                        <ul class="list-disc pl-4">
+                          {exp.contributions?.map((line) => (
+                            <li>{line}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+                    {exp.achievements?.length > 0 ? (
+                      <div className="mt-2 mb-2 print:text-sm text-justify">
+                        <p>{exp.achievement}</p>
+                        <ul class="list-disc pl-4">
+                          {exp.achievements?.map((line) => (
+                            <li>{line}</li>
+                          ))}
+                        </ul>
                       </div>
                     ) : null}
                   </div>

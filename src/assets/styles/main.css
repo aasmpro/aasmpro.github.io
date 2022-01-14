@@ -10,6 +10,9 @@ html {
 * {
   @apply text-light-0;
   font-family: JBM;
+  letter-spacing: -0.6px;
+  word-spacing: -3px;
+  line-height: 1.4;
 }
 
 @media print {
