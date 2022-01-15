@@ -2,18 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { skills, experiences } from "../data";
 
-// Fixme
-//
-// must add following values too:
-// birth-date / location / marriage / military / education
-//
-// make experiences like:
-// work/comp desc / things and tasks being done with statistics
-//
-// make links look better
-// add some shapes or backgrounds
-// maybe decrease the font-size
-
 export const Resume = () => {
   return (
     <div className="flex flex-col items-center">
@@ -29,7 +17,7 @@ export const Resume = () => {
             <a
               className="px-3 py-0.5 bg-yellow-0 rounded-full
               transition duration-300  hover:bg-black hover:ring-2 hover:ring-yellow-0"
-              href="/AbolfazlAmiri.pdf">
+              href="/AbolfazlAmiri.pdf" target="_blank">
               Download
             </a>
           </div>
@@ -42,74 +30,71 @@ export const Resume = () => {
               </p>
               <p className="print:text-2xl text-2xl">Python & Web Developer</p>
             </div>
-            <div>
-              <div className="flex flex-col print:text-sm whitespace-nowrap">
-                <div className="mb-2 print:mb-1.5">
-                  <a
-                    className="block max-w-[243px] px-3 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+            <div className="flex flex-col print:text-sm whitespace-nowrap mt-5 md:mt-0 print:mt-0">
+              <div className="mb-2 print:mb-1.5">
+                <a
+                  className="block max-w-[243px] px-3 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
                             transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
-                    href="https://abolfazlamiri.ir"
-                    title="Webpage">
-                    <i class="fas fa-globe-americas text-light-0 mr-1.5" />{" "}
-                    abolfazlamiri.ir
-                  </a>
-                </div>
-                <div className="mb-2 print:mb-1.5">
-                  <a
-                    className="block max-w-[243px] px-3 py-0.5 font-bold bg-red-0 rounded-full print:text-light-0
+                  href="https://abolfazlamiri.ir"
+                  title="Webpage">
+                  <i class="fas fa-globe-americas text-light-0 mr-1.5" />{" "}
+                  abolfazlamiri.ir
+                </a>
+              </div>
+              <div className="mb-2 print:mb-1.5">
+                <a
+                  className="block max-w-[243px] px-3 py-0.5 font-bold bg-red-0 rounded-full print:text-light-0
                             transition duration-300 hover:bg-black hover:ring-2 hover:ring-red-0"
-                    href="mailto:aasmpro@gmail.com"
-                    title="Email">
-                    <i class="fas fa-at text-light-0 mr-1.5" />{" "}
-                    aasmpro@gmail.com
-                  </a>
-                </div>
-                <div className="mb-2 print:mb-1.5">
-                  <a
-                    className="block max-w-[243px] px-3 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                  href="mailto:aasmpro@gmail.com"
+                  title="Email">
+                  <i class="fas fa-at text-light-0 mr-1.5" /> aasmpro@gmail.com
+                </a>
+              </div>
+              <div className="mb-2 print:mb-1.5">
+                <a
+                  className="block max-w-[243px] px-3 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
                             transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
-                    href="tel:+989217214929"
-                    title="Phone">
-                    <i class="fas fa-phone text-light-0 mr-1.5" /> +989217214929
-                  </a>
-                </div>
-                <div>
-                  <a
-                    className="px-3.5 mr-2 py-0.5 font-bold bg-dark-2 rounded-full print:text-light-0
+                  href="tel:+989217214929"
+                  title="Phone">
+                  <i class="fas fa-phone text-light-0 mr-1.5" /> +989217214929
+                </a>
+              </div>
+              <div className="flex flex-wrap">
+                <a
+                  className="px-3.5 mr-2 py-0.5 font-bold bg-dark-2 rounded-full print:text-light-0
                             transition duration-300 hover:bg-black hover:ring-2 hover:ring-dark-2"
-                    href="https://github.com/aasmpro"
-                    title="Github">
-                    <i class="fab fa-github-alt text-light-0" />
-                  </a>
-                  <a
-                    className="px-3.5 mr-2 py-0.5 font-bold bg-orange-0 rounded-full print:text-light-0
+                  href="https://github.com/aasmpro"
+                  title="Github">
+                  <i class="fab fa-github-alt text-light-0" />
+                </a>
+                <a
+                  className="px-3.5 mr-2 py-0.5 font-bold bg-orange-0 rounded-full print:text-light-0
                   transition duration-300 hover:bg-black hover:ring-2 hover:ring-orange-0"
-                    href="https://stackoverflow.com/users/6484831/aasmpro"
-                    title="Stackoverflow">
-                    <i class="fab fa-stack-overflow text-light-0" />
-                  </a>
-                  <a
-                    className="px-3.5 mr-2 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                  href="https://stackoverflow.com/users/6484831/aasmpro"
+                  title="Stackoverflow">
+                  <i class="fab fa-stack-overflow text-light-0" />
+                </a>
+                <a
+                  className="px-3.5 mr-2 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
                   transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
-                    href="https://www.linkedin.com/in/aasmpro/"
-                    title="Linkedin">
-                    <i class="fab fa-linkedin-in text-light-0" />
-                  </a>
-                  <a
-                    className="px-3.5 mr-2 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                  href="https://www.linkedin.com/in/aasmpro/"
+                  title="Linkedin">
+                  <i class="fab fa-linkedin-in text-light-0" />
+                </a>
+                <a
+                  className="px-3.5 mr-2 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
                   transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
-                    href="https://twitter.com/aasmpro"
-                    title="Twitter">
-                    <i class="fab fa-twitter text-light-0" />
-                  </a>
-                  <a
-                    className="px-3.5 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
+                  href="https://twitter.com/aasmpro"
+                  title="Twitter">
+                  <i class="fab fa-twitter text-light-0" />
+                </a>
+                <a
+                  className="px-3.5 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
                   transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
-                    href="https://telegram.me/aasmpro/"
-                    title="Telegram">
-                    <i class="fab fa-telegram-plane text-light-0" />
-                  </a>
-                </div>
+                  href="https://telegram.me/aasmpro/"
+                  title="Telegram">
+                  <i class="fab fa-telegram-plane text-light-0" />
+                </a>
               </div>
             </div>
           </div>
@@ -217,7 +202,7 @@ export const Resume = () => {
                     ) : null}
                     {exp.responsibilities?.length > 0 ? (
                       <div className="mt-2 mb-2 print:text-sm text-justify">
-                        <p>{exp.responsible}</p>
+                        <p className="font-bold">{exp.responsible}</p>
                         <ul class="list-disc pl-4">
                           {exp.responsibilities.map((line) => (
                             <li>{line}</li>
@@ -227,7 +212,7 @@ export const Resume = () => {
                     ) : null}
                     {exp.contributions?.length > 0 ? (
                       <div className="mt-2 mb-2 print:text-sm text-justify">
-                        <p>{exp.contribution}</p>
+                        <p className="font-bold">{exp.contribution}</p>
                         <ul class="list-disc pl-4">
                           {exp.contributions?.map((line) => (
                             <li>{line}</li>
@@ -237,7 +222,7 @@ export const Resume = () => {
                     ) : null}
                     {exp.achievements?.length > 0 ? (
                       <div className="mt-2 mb-2 print:text-sm text-justify">
-                        <p>{exp.achievement}</p>
+                        <p className="font-bold">{exp.achievement}</p>
                         <ul class="list-disc pl-4">
                           {exp.achievements?.map((line) => (
                             <li>{line}</li>
