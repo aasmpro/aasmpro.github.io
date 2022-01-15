@@ -60,6 +60,28 @@ export const projects = [
     showExperiences: true,
   },
   {
+    title: "Zero Resume",
+    about: [
+      "Yet another Django-based resume content provider with RestFul APIs and Admin panel, including Sections, Links, CoverLetters, etc.",
+      "It has its own frontend project, developed with React."
+    ],
+    stack: ["Python", "Django"],
+    links: [
+      {
+        title: "github.com/aasmpro/zero-resume",
+        href: "https://github.com/aasmpro/zero-resume",
+        titleInfo: "Github",
+        icon: "fab fa-github-alt",
+        bgColor: "bg-green-0",
+        ringColor: "ring-green-0",
+      },
+    ],
+    orderProjects: 190,
+    orderExperiences: 0,
+    showProjects: true,
+    showExperiences: true,
+  },
+  {
     title: "GruvDoc",
     about: [
       "Pre-configured MkDocs project with all the must useful extensions and tweaks needed, just Fork, Change and Push!",
@@ -427,6 +449,33 @@ export const projects = [
     orderExperiences: 0,
     showProjects: false,
     showExperiences: true,
+  },
+  {
+    title: "FatemehAmirhosseini.ir",
+    about: ["Fatemeh Amirhosseini personal site.", "It's using ZeroResume project as backend."],
+    stack: ["Python", "Django", "React", "Tailwind"],
+    links: [
+      {
+        title: "fatemehamirhosseini.ir",
+        href: "https://fatemehamirhosseini.ir",
+        titleInfo: "WebPage",
+        icon: "fas fa-link",
+        bgColor: "bg-orange-0",
+        ringColor: "ring-orange-0",
+      },
+      {
+        title: "github.com/aasmpro/fatemehamirhosseini.ir",
+        href: "https://github.com/aasmpro/fatemehamirhosseini.ir",
+        titleInfo: "Github",
+        icon: "fab fa-github-alt",
+        bgColor: "bg-orange-0",
+        ringColor: "ring-orange-0",
+      },
+    ],
+    orderProjects: 115,
+    orderExperiences: 0,
+    showProjects: true,
+    showExperiences: false,
   },
   {
     title: "AmirAmiri.ir",
