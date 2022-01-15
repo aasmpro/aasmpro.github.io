@@ -5,7 +5,7 @@ import { Hero } from "../components/Hero";
 
 export const Home = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Hero />
       <div
         id="info"
@@ -19,7 +19,7 @@ export const Home = () => {
               href="https://snappcarfix.com">
               SnappCarFix
             </a>
-            , the largest online platform for car parts and services in Iran.
+            , the largest online platform for Car parts and services in Iran, backed by Snapp (Uber clone).
           </p>
           <p className="mb-4">
             Here is my
