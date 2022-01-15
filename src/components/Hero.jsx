@@ -38,7 +38,7 @@ export const Hero = () => {
       <div className="flex-col justify-center items-center">
         {setCharsMatrix(charsMatrix, values[index], 16, 18, 26, 35).map(
           (line) => (
-            <div>{line.map((char) => char)}</div>
+            <div className="whitespace-nowrap">{line.map((char) => char)}</div>
           )
         )}
       </div>
