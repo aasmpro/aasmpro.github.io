@@ -451,6 +451,33 @@ export const projects = [
     showExperiences: true,
   },
   {
+    title: "AbolfazlAmiri.ir",
+    about: ["Current site! ;] my resume and portfolio. Hosted by github pages."],
+    stack: ["React", "Tailwind"],
+    links: [
+      {
+        title: "abolfazlamiri.ir",
+        href: "https://abolfazlamiri.ir",
+        titleInfo: "WebPage",
+        icon: "fas fa-link",
+        bgColor: "bg-orange-0",
+        ringColor: "ring-orange-0",
+      },
+      {
+        title: "github.com/aasmpro/aasmpro.github.io",
+        href: "https://github.com/aasmpro/aasmpro.github.io",
+        titleInfo: "Github",
+        icon: "fab fa-github-alt",
+        bgColor: "bg-orange-0",
+        ringColor: "ring-orange-0",
+      },
+    ],
+    orderProjects: 118,
+    orderExperiences: 0,
+    showProjects: true,
+    showExperiences: false,
+  },
+  {
     title: "FatemehAmirhosseini.ir",
     about: ["Fatemeh Amirhosseini personal site.", "It's using ZeroResume project as backend."],
     stack: ["Python", "Django", "React", "Tailwind"],
