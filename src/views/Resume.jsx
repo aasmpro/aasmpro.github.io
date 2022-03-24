@@ -17,7 +17,8 @@ export const Resume = () => {
             <a
               className="px-3 py-0.5 bg-yellow-0 rounded-full
               transition duration-300  hover:bg-black hover:ring-2 hover:ring-yellow-0"
-              href="/AbolfazlAmiri.pdf" target="_blank">
+              href="/AbolfazlAmiri.pdf"
+              target="_blank">
               Download
             </a>
           </div>
@@ -117,7 +118,7 @@ export const Resume = () => {
               self-learner, without prejudice on tools and tech stacks, and
               ready for new challenges.
               <ul class="print:text-xs list-disc pl-4 pt-2 grid md:grid-cols-2 print:sm:grid-cols-2">
-                <li>Education: B.S. Computer Engineering</li>
+                <li>Education: Computer Engineering (Associate)</li>
                 <li>Marriage: Single</li>
                 <li>Military Service: Exempted</li>
                 <li>Birth Date: 22 Feb 1996</li>
