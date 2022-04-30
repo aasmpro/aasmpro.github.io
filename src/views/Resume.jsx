@@ -102,21 +102,23 @@ export const Resume = () => {
           <div className="py-4 print:text-sm">
             <p className="mb-3 print:text-xl text-2xl font-bold">About Me</p>
             <div className="text-justify">
-              Hi! I'm a Team Leader & Web Developer, currently working as CTO at{" "}
+              Hi! I'm a Team Leader & Web Developer, currently working as
+              FullStack Developer at{" "}
               <a
-                href="https://snappcarfix.com"
+                href="https://www.trustyou.com"
                 className="text-blue-0 font-bold">
-                SnappCarFix
+                TrustYou
               </a>
-              , the largest online platform for car parts and services in Iran.
-              I have around 5 years of experience in software development mainly
-              in Web Development, more than 2 years of leading the tech teams.
-              My aim is to enhance user experience and create new values in
-              addition to delivering a clean scalable code, by being closely in
-              touch with the end-users. I can easily make strong sincere
-              relations with my team and help them to develop themselves. I'm a
-              self-learner, without prejudice on tools and tech stacks, and
-              ready for new challenges.
+              , the world's largest feedback platform, aims to optimize the
+              travel experience from the right hotel to the perfect stay. I have
+              around 5 years of experience in software development mainly in Web
+              Development, more than 2 years of leading the tech teams. My aim
+              is to enhance user experience and create new values in addition to
+              delivering a clean scalable code, by being closely in touch with
+              the end-users. I can easily make strong sincere relations with my
+              team and help them to develop themselves. I'm a self-learner,
+              without prejudice on tools and tech stacks, and ready for new
+              challenges.
               <ul class="print:text-xs list-disc pl-4 pt-2 grid md:grid-cols-2 print:sm:grid-cols-2">
                 <li>Education: Computer Engineering (Associate)</li>
                 <li>Marriage: Single</li>

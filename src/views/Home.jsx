@@ -17,7 +17,7 @@ export const Home = () => {
             <a
               className="mx-2 px-2 bg-blue-0 rounded-full
               transition duration-300  hover:bg-black hover:ring-2 hover:ring-blue-0"
-              href="https://snappcarfix.com">
+              href="https://www.trustyou.com">
               TrustYou
             </a>
             , the world's largest feedback platform, aims to optimize the travel

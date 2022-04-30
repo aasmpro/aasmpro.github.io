@@ -1,9 +1,46 @@
 export const experiences = [
   {
+    title: "FullStack Developer",
+    company: "TrustYou",
+    startDate: "Apr 2022",
+    endDate: "present",
+    type: "Full-time",
+    location: "Munich, Bavaria, Germany",
+    about: [
+      "TrustYou is the world's largest feedback platform, aims to optimize the travel experience from the right hotel to the perfect stay.",
+      "To achieve this, the company cooperates with hotels, destinations and travel websites. TrustYou analyzes hundreds of millions of traveler reviews, turns them into actionable insights, and visualizes data for 500,000 hotels.",
+      "As a result, travel websites can improve the travel planning process and hotels can offer their guests the best possible experience.",
+    ],
+    responsible: "Responsibilities:",
+    responsibilities: [
+      "Develop and maintain projects on Shared Components and Inbox teams",
+    ],
+    contribution: "Contributions:",
+    contributions: [],
+    achievement: "Achievements:",
+    achievements: [],
+    stack: [
+      "Python",
+      "FastAPI",
+      "Django",
+      "Flask",
+      "React",
+      "Docker",
+      "Kubernetes",
+    ],
+    links: [
+      {
+        title: "trustyou.com",
+        href: "https://www.trustyou.com",
+      },
+    ],
+    showExperiences: true,
+  },
+  {
     title: "CTO - Web Developer",
     company: "SnappCarFix / CarFillo",
     startDate: "Sep 2019",
-    endDate: "present",
+    endDate: "Apr 2022",
     type: "Full-time",
     location: "Isfahan, Iran",
     about: [
@@ -51,14 +88,7 @@ export const experiences = [
       "Upgrading e-commerce share of GDP by 1.5%",
       "Decreasing logistic costs by 45%",
     ],
-    stack: [
-      "Python",
-      "Django",
-      "React",
-      "Memcached",
-      "Celery",
-      "Docker",
-    ],
+    stack: ["Python", "Django", "React", "Memcached", "Celery", "Docker"],
     links: [
       {
         title: "snappcarfix.com",
@@ -95,7 +125,7 @@ export const experiences = [
     contribution: "Contributions:",
     contributions: [
       "Developed backend, frontend, and admin panels of scanortap with NestJS and React",
-      "Refactored some parts of main platform from SailJS to NestJS and Angular to React"
+      "Refactored some parts of main platform from SailJS to NestJS and Angular to React",
     ],
     achievement: "Achievements:",
     achievements: [],
