@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { skills, experiences } from "../data";
 
 export const Resume = () => {
+  const [showDetails, setShowDetails] = useState(true);
+
   return (
     <div className="flex flex-col items-center">
       <div className="md:w-4/5 w-full print:w-full">
@@ -14,13 +16,30 @@ export const Resume = () => {
               to="/">
               Home
             </Link>
-            <a
-              className="px-3 py-0.5 bg-yellow-0 rounded-full
+            <div>
+              {showDetails ? (
+                <span
+                  className="px-3 py-0.5 bg-light-1 rounded-full text-dark-0 hover:text-light-0
+            transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1 cursor-pointer"
+                  onClick={() => setShowDetails(false)}>
+                  Details
+                </span>
+              ) : (
+                <span
+                  className="px-3 py-0.5 bg-dark-0 rounded-full text-light-0 hover:text-light-0
+            transition duration-300  hover:bg-black hover:ring-2 hover:ring-dark-0 cursor-pointer"
+                  onClick={() => setShowDetails(true)}>
+                  Details
+                </span>
+              )}
+              <a
+                className="ml-2 px-3 py-0.5 bg-yellow-0 rounded-full
               transition duration-300  hover:bg-black hover:ring-2 hover:ring-yellow-0"
-              href="/AbolfazlAmiri.pdf"
-              target="_blank">
-              Download
-            </a>
+                href="/AbolfazlAmiri.pdf"
+                target="_blank">
+                Download
+              </a>
+            </div>
           </div>
         </div>
         <div className="px-5 print:!p-0 divide-y-2 divide-dark-0">
@@ -119,12 +138,14 @@ export const Resume = () => {
               team and help them to develop themselves. I'm a self-learner,
               without prejudice on tools and tech stacks, and ready for new
               challenges.
-              <ul class="print:text-xs list-disc pl-4 pt-2 grid md:grid-cols-2 print:sm:grid-cols-2">
-                <li>Education: Computer Engineering (Associate)</li>
-                <li>Marriage: Single</li>
-                <li>Military Service: Exempted</li>
-                <li>Birth Date: 22 Feb 1996</li>
-              </ul>
+              {showDetails ? (
+                <ul class="print:text-xs list-disc pl-4 pt-2 grid md:grid-cols-2 print:sm:grid-cols-2">
+                  <li>Education: Computer Engineering (Associate)</li>
+                  <li>Marriage: Single</li>
+                  <li>Military Service: Exempted</li>
+                  <li>Birth Date: 22 Feb 1996</li>
+                </ul>
+              ) : null}
             </div>
           </div>
           <div className="py-4 print:text-sm">
@@ -203,7 +224,7 @@ export const Resume = () => {
                         ))}
                       </div>
                     ) : null}
-                    {exp.responsibilities?.length > 0 ? (
+                    {showDetails && exp.responsibilities?.length > 0 ? (
                       <div className="mt-2 mb-2 print:text-sm text-justify">
                         <p className="font-bold">{exp.responsible}</p>
                         <ul class="list-disc pl-4">
@@ -213,7 +234,7 @@ export const Resume = () => {
                         </ul>
                       </div>
                     ) : null}
-                    {exp.contributions?.length > 0 ? (
+                    {showDetails && exp.contributions?.length > 0 ? (
                       <div className="mt-2 mb-2 print:text-sm text-justify">
                         <p className="font-bold">{exp.contribution}</p>
                         <ul class="list-disc pl-4">
@@ -223,7 +244,7 @@ export const Resume = () => {
                         </ul>
                       </div>
                     ) : null}
-                    {exp.achievements?.length > 0 ? (
+                    {showDetails && exp.achievements?.length > 0 ? (
                       <div className="mt-2 mb-2 print:text-sm text-justify">
                         <p className="font-bold">{exp.achievement}</p>
                         <ul class="list-disc pl-4">
