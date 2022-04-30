@@ -12,14 +12,16 @@ export const Home = () => {
         className="min-h-screen flex flex-col justify-center items-center">
         <div className="sm:w-[500px] w-screen p-5 py-20 text-lg select-none">
           <p className="mb-4">
-            Hi! I'm a Team Leader & Web Developer, currently working as CTO at
+            Hi! I'm a Team Leader & Web Developer, currently working as
+            FullStack Developer at
             <a
-              className="mx-2 px-2 bg-aqua-0 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-aqua-0"
+              className="mx-2 px-2 bg-blue-0 rounded-full
+              transition duration-300  hover:bg-black hover:ring-2 hover:ring-blue-0"
               href="https://snappcarfix.com">
-              SnappCarFix
+              TrustYou
             </a>
-            , the largest online platform for Car parts and services in Iran, backed by Snapp (Uber clone).
+            , the world's largest feedback platform, aims to optimize the travel
+            experience from the right hotel to the perfect stay.
           </p>
           <p className="mb-4">
             Here is my
