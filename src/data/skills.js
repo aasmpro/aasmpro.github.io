@@ -1,6 +1,6 @@
 export const skills = [
   "Python",
-  "Django",
+  "Django, FastAPI",
   "JS, TS",
   "React",
   "Sass, Tailwind",
