@@ -54,7 +54,7 @@ export const Resume = () => {
               <div className="mb-2 print:mb-1.5">
                 <a
                   className="block max-w-[243px] px-3 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
-                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
+                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0 print:bg-black"
                   href="https://abolfazlamiri.ir"
                   title="Webpage">
                   <i class="fas fa-globe-americas text-light-0 mr-1.5" />{" "}
@@ -72,8 +72,8 @@ export const Resume = () => {
               </div>
               <div className="mb-2 print:mb-1.5">
                 <a
-                  className="block max-w-[243px] px-3 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
-                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
+                  className="block max-w-[243px] px-3 py-0.5 font-bold bg-aqua-0 rounded-full print:text-light-0
+                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-aqua-0"
                   href="tel:+989217214929"
                   title="Phone">
                   <i class="fas fa-phone text-light-0 mr-1.5" /> +989217214929
@@ -159,12 +159,7 @@ export const Resume = () => {
             </ul>
           </div>
           <div className="py-4 print:text-sm">
-            <div className="mb-3 flex justify-between">
-              <p className="print:text-xl text-2xl font-bold">Experiences</p>
-              <p className="print:text-xs print:block hidden font-bold print:text-gray-1">
-                Check out my site and Linkedin profile for more!
-              </p>
-            </div>
+            <p className="mb-3 print:text-xl text-2xl font-bold">Experiences</p>
             <div>
               {experiences
                 .filter((exp) => exp.showExperiences)
