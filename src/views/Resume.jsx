@@ -73,7 +73,7 @@ export const Resume = () => {
               <div className="mb-2 print:mb-1.5">
                 <a
                   className="block max-w-[243px] px-3 py-0.5 font-bold bg-aqua-0 rounded-full print:text-light-0
-                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-aqua-0"
+                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-aqua-0 print:bg-yellow-0"
                   href="tel:+989217214929"
                   title="Phone">
                   <i class="fas fa-phone text-light-0 mr-1.5" /> +989217214929
