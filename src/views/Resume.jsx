@@ -128,7 +128,7 @@ export const Resume = () => {
                 className="text-blue-0 font-bold">
                 TrustYou
               </a>
-              , the world's largest feedback platform. I have around 5 years of
+              , the world's largest feedback platform. I have around 6 years of
               experience in software development mainly in Web Development, more
               than 2 years of leading the tech teams. My aim is to enhance user
               experience and create new values in addition to delivering a clean
