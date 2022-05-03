@@ -35,6 +35,7 @@ export const experiences = [
       },
     ],
     showExperiences: true,
+    showExperiencesPrint: true,
   },
   {
     title: "CTO - Web Developer",
@@ -108,6 +109,7 @@ export const experiences = [
       },
     ],
     showExperiences: true,
+    showExperiencesPrint: true,
   },
   {
     title: "Web Developer",
@@ -141,6 +143,7 @@ export const experiences = [
       },
     ],
     showExperiences: true,
+    showExperiencesPrint: true,
   },
   {
     title: "Web Developer",
@@ -167,6 +170,7 @@ export const experiences = [
     stack: ["Python", "Django", "JS/TS", "React", "ReactNative"],
     links: [],
     showExperiences: true,
+    showExperiencesPrint: true,
   },
   {
     title: "Backend Developer",
@@ -201,6 +205,7 @@ export const experiences = [
       },
     ],
     showExperiences: true,
+    showExperiencesPrint: true,
   },
   {
     title: "Web Developer",
@@ -226,5 +231,6 @@ export const experiences = [
     stack: ["Python", "Django", "JS", "HTML", "CSS", "MySQL"],
     links: [],
     showExperiences: true,
+    showExperiencesPrint: true,
   },
 ];

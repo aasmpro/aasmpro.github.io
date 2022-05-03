@@ -128,16 +128,14 @@ export const Resume = () => {
                 className="text-blue-0 font-bold">
                 TrustYou
               </a>
-              , the world's largest feedback platform, aims to optimize the
-              travel experience from the right hotel to the perfect stay. I have
-              around 5 years of experience in software development mainly in Web
-              Development, more than 2 years of leading the tech teams. My aim
-              is to enhance user experience and create new values in addition to
-              delivering a clean scalable code, by being closely in touch with
-              the end-users. I can easily make strong sincere relations with my
-              team and help them to develop themselves. I'm a self-learner,
-              without prejudice on tools and tech stacks, and ready for new
-              challenges.
+              , the world's largest feedback platform. I have around 5 years of
+              experience in software development mainly in Web Development, more
+              than 2 years of leading the tech teams. My aim is to enhance user
+              experience and create new values in addition to delivering a clean
+              scalable code, by being closely in touch with the end-users. I can
+              easily make strong sincere relations with my team and help them to
+              develop themselves. I'm a self-learner, without prejudice on tools
+              and tech stacks, and ready for new challenges.
               {showDetails ? (
                 <ul class="print:text-xs list-disc pl-4 pt-2 grid md:grid-cols-2 print:sm:grid-cols-2">
                   <li>Education: Computer Engineering (Associate)</li>
@@ -161,12 +159,20 @@ export const Resume = () => {
             </ul>
           </div>
           <div className="py-4 print:text-sm">
-            <p className="mb-3 print:text-xl text-2xl font-bold">Experiences</p>
+            <div className="mb-3 flex justify-between">
+              <p className="print:text-xl text-2xl font-bold">Experiences</p>
+              <p className="print:text-xs print:block hidden font-bold print:text-gray-1">
+                Check out my site and Linkedin profile for more!
+              </p>
+            </div>
             <div>
               {experiences
                 .filter((exp) => exp.showExperiences)
                 .map((exp) => (
-                  <div className="py-2 first:pt-0">
+                  <div
+                    className={`py-2 first:pt-0 ${
+                      exp.showExperiencesPrint ? "" : "print:hidden"
+                    }`}>
                     <div className="flex justify-between">
                       <div>
                         <p className="print:text-lg text-lg font-semibold">
