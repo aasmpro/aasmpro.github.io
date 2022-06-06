@@ -21,14 +21,14 @@ export const Projects = () => {
                 className="px-3 py-0.5 bg-light-1 rounded-full text-dark-0 hover:text-light-0
             transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1 cursor-pointer"
                 onClick={() => setShowDetails(false)}>
-                Details
+                Detail
               </span>
             ) : (
               <span
                 className="px-3 py-0.5 bg-dark-0 rounded-full text-light-0 hover:text-light-0
             transition duration-300  hover:bg-black hover:ring-2 hover:ring-dark-0 cursor-pointer"
                 onClick={() => setShowDetails(true)}>
-                Details
+                Detail
               </span>
             )}
           </div>
@@ -46,7 +46,7 @@ export const Projects = () => {
                       <a href={link.href} title={link.titleInfo}>
                         <span
                           className={`flex items-center justify-center rounded-md transition duration-300 hover:bg-black hover:ring-2 ${link.ringColor} ${link.bgColor} w-[40px] h-[40px] m-0 p-0 mr-2 mt-2`}>
-                          <i class={`${link.icon} text-lg`} />
+                          <i className={`${link.icon} text-lg`} />
                         </span>
                       </a>
                     ))}

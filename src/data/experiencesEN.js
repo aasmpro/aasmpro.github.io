@@ -1,4 +1,4 @@
-export const experiences = [
+export const experiencesEN = [
   {
     title: "FullStack Developer",
     company: "TrustYou",

@@ -91,8 +91,8 @@ export const Home = () => {
           </p>
           <div className="mt-5 flex flex-wrap gap-2 leading-snug">
             <a
-              className="px-2 bg-dark-3 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-dark-3"
+              className="px-2 bg-dark-0 rounded-full
+              transition duration-300  hover:bg-black hover:ring-2 hover:ring-dark-0"
               href="https://github.com/aasmpro"
               title="Github">
               Github

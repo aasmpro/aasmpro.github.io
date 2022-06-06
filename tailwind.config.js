@@ -1,5 +1,4 @@
 module.exports = {
-  mode: "jit",
   content: [
     "./src/data/*.js",
     "./src/views/*.{js,jsx}",
@@ -7,8 +6,6 @@ module.exports = {
     "./src/Main.jsx",
     "./src/index.js",
   ],
-  safelist: [],
-  darkMode: "media", // 'media' or 'class'
   theme: {
     colors: {
       black: "#000000",
@@ -77,11 +74,6 @@ module.exports = {
       screens: {
         print: { raw: "print" },
       },
-    },
-  },
-  variants: {
-    extend: {
-      transitionProperty: [],
     },
   },
   plugins: [],
