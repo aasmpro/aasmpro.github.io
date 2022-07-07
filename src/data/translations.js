@@ -1,5 +1,5 @@
 export const translations = {
-  home: {
+  Home: {
     EN: "Home",
     DE: "Heim",
   },

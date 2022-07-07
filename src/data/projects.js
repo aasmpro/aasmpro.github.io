@@ -18,7 +18,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/python3tutorials",
         href: "https://github.com/aasmpro/python3tutorials",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-blue-0",
         ringColor: "ring-blue-0",
@@ -48,7 +48,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/django-zero-settings",
         href: "https://github.com/aasmpro/django-zero-settings",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-green-0",
         ringColor: "ring-green-0",
@@ -70,7 +70,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/zero-resume",
         href: "https://github.com/aasmpro/zero-resume",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-green-0",
         ringColor: "ring-green-0",
@@ -100,7 +100,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/gruvdoc",
         href: "https://github.com/aasmpro/gruvdoc",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-green-0",
         ringColor: "ring-green-0",
@@ -129,7 +129,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/djangosmartshare",
         href: "https://github.com/aasmpro/djangosmartshare",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-green-0",
         ringColor: "ring-green-0",
@@ -158,7 +158,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/simplesm",
         href: "https://github.com/aasmpro/simplesm",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-blue-0",
         ringColor: "ring-blue-0",
@@ -187,7 +187,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/simplesocket",
         href: "https://github.com/aasmpro/simplesocket",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-blue-0",
         ringColor: "ring-blue-0",
@@ -216,7 +216,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/xurl",
         href: "https://github.com/aasmpro/xurl",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-dark-0",
         ringColor: "ring-dark-0",
@@ -245,7 +245,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/dotfiles",
         href: "https://github.com/aasmpro/dotfiles",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-dark-0",
         ringColor: "ring-dark-0",
@@ -274,7 +274,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/randomize",
         href: "https://github.com/aasmpro/randomize",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-red-0",
         ringColor: "ring-red-0",
@@ -303,7 +303,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/truthordare",
         href: "https://github.com/aasmpro/truthordare",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-red-0",
         ringColor: "ring-red-0",
@@ -322,7 +322,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/svpn",
         href: "https://github.com/aasmpro/svpn",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-dark-0",
         ringColor: "ring-dark-0",
@@ -351,7 +351,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/huntthewumpus",
         href: "https://github.com/aasmpro/huntthewumpus",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-red-0",
         ringColor: "ring-red-0",
@@ -372,7 +372,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/behdar",
         href: "https://github.com/aasmpro/behdar",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-purple-0",
         ringColor: "ring-purple-0",
@@ -391,7 +391,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/aasmpro.github.io",
         href: "https://github.com/aasmpro/aasmpro.github.io",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-orange-0",
         ringColor: "ring-orange-0",
@@ -407,7 +407,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/amiramiri.ir",
         href: "https://github.com/aasmpro/amiramiri.ir",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-orange-0",
         ringColor: "ring-orange-0",
@@ -423,7 +423,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/melikaamirhoseini.ir",
         href: "https://github.com/aasmpro/melikaamirhoseini.ir",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-orange-0",
         ringColor: "ring-orange-0",
@@ -439,7 +439,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/panizmohebbi.ir",
         href: "https://github.com/aasmpro/panizmohebbi.ir",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-orange-0",
         ringColor: "ring-orange-0",
@@ -466,7 +466,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/aasmpro.github.io",
         href: "https://github.com/aasmpro/aasmpro.github.io",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-orange-0",
         ringColor: "ring-orange-0",
@@ -493,7 +493,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/fatemehamirhosseini.ir",
         href: "https://github.com/aasmpro/fatemehamirhosseini.ir",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-orange-0",
         ringColor: "ring-orange-0",
@@ -520,7 +520,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/amiramiri.ir",
         href: "https://github.com/aasmpro/amiramiri.ir",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-orange-0",
         ringColor: "ring-orange-0",
@@ -547,7 +547,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/melikaamirhoseini.ir",
         href: "https://github.com/aasmpro/melikaamirhoseini.ir",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-orange-0",
         ringColor: "ring-orange-0",
@@ -574,7 +574,7 @@ export const projects = [
       {
         title: "github.com/aasmpro/panizmohebbi.ir",
         href: "https://github.com/aasmpro/panizmohebbi.ir",
-        titleInfo: "Github",
+        titleInfo: "GitHub",
         icon: "fab fa-github-alt",
         bgColor: "bg-orange-0",
         ringColor: "ring-orange-0",

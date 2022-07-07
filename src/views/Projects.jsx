@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
+import { LinkButtonName, LinkButton } from "../components/LinkButton";
 import { projects } from "../data";
 
 export const Projects = () => {
@@ -10,12 +11,12 @@ export const Projects = () => {
       <div className="md:w-4/5 w-full">
         <div className="mb-5 p-4 border-dark-0 border-b-2">
           <div className="flex justify-between">
-            <Link
-              className="px-3 py-0.5 bg-light-1 rounded-full text-dark-0 hover:text-light-0
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1"
-              to="/">
-              Home
-            </Link>
+            <LinkButtonName
+              name="Home"
+              useIcon={false}
+              className="px-3 py-0.5 text-dark-0 hover:text-light-0"
+              useLinkComponent={true}
+            />
             {showDetails ? (
               <span
                 className="px-3 py-0.5 bg-light-1 rounded-full text-dark-0 hover:text-light-0
@@ -43,12 +44,16 @@ export const Projects = () => {
                   <p className="text-xl font-bold">{pro.title}</p>
                   <div className="flex flex-row">
                     {pro.links.map((link) => (
-                      <a href={link.href} title={link.titleInfo}>
-                        <span
-                          className={`flex items-center justify-center rounded-md transition duration-300 hover:bg-black hover:ring-2 ${link.ringColor} ${link.bgColor} w-[40px] h-[40px] m-0 p-0 mr-2 mt-2`}>
-                          <i className={`${link.icon} text-lg`} />
-                        </span>
-                      </a>
+                      <LinkButton
+                        className="w-[40px] h-[40px] m-0 p-0 mr-2 mt-2 flex items-center justify-center rounded-md"
+                        bgColor={link.bgColor}
+                        ringColor={link.ringColor}
+                        icon={link.icon}
+                        iconClassName="text-lg"
+                        href={link.href}
+                        text={link.title}
+                        useText={false}
+                      />
                     ))}
                   </div>
                   {showDetails ? (
@@ -70,18 +75,6 @@ export const Projects = () => {
                 </div>
               ))}
           </div>
-          {/* <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {projects
-              .filter((pro) => pro.showProjects)
-              .sort((a, b) => b.orderProjects - a.orderProjects)
-              .map((pro) => (
-                <a
-                  href={pro.link}
-                  className={`block text-center p-2 py-3 rounded-lg transition duration-300 hover:bg-black hover:ring-2 ${pro.ringColor} ${pro.bgColor} overflow-hidden`}>
-                  {pro.title}
-                </a>
-              ))}
-          </div> */}
         </div>
       </div>
     </div>

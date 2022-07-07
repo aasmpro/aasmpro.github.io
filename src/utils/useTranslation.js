@@ -37,7 +37,11 @@ export const useTranslation = () => {
 
   const get = (data) => {
     if (typeof data === "string") {
-      return translations[data][language];
+      try {
+        return translations[data][language];
+      } catch (error) {
+        return data;
+      }
     } else {
       return data[language];
     }

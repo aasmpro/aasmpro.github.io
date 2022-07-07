@@ -6,6 +6,7 @@ import { skillsEN } from "./skillsEN";
 import { skillsDE } from "./skillsDE";
 export { projects } from "./projects";
 export { translations } from "./translations";
+export { links } from "./links";
 
 export const aboutMeTranslations = {
   EN: aboutMeEN,

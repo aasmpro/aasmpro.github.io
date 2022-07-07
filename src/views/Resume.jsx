@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
+import { LinkButtonName, LinkButton } from "../components/LinkButton";
 import {
   aboutMeTranslations,
   experiencesTranslations,
@@ -27,12 +28,14 @@ export const Resume = () => {
       <div className="md:w-4/5 w-full print:w-full">
         <div className="mb-5 p-4 border-dark-0 border-b-2 print:hidden">
           <div className="flex justify-between flex-wrap">
-            <Link
-              className="px-3 py-0.5 bg-light-1 rounded-full text-dark-0 hover:text-light-0
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1"
-              to="/">
-              {translation.get("home")}
-            </Link>
+            <LinkButtonName
+              name="Home"
+              text={translation.get("Home")}
+              title={translation.get("Home")}
+              useIcon={false}
+              className="px-3 py-0.5 text-dark-0 hover:text-light-0"
+              useLinkComponent={true}
+            />
             <div>
               <span
                 className="mr-2 py-0.5 rounded-full text-dark-0 overflow-hidden
@@ -99,72 +102,36 @@ export const Resume = () => {
               <p className="print:text-2xl text-2xl">{aboutMe.title}</p>
             </div>
             <div className="flex flex-col print:text-sm whitespace-nowrap mt-5 md:mt-0 print:mt-0">
-              <div className="mb-2 print:mb-1.5">
-                <a
-                  className="block max-w-[243px] px-3 py-0.5 font-bold bg-dark-0 rounded-full print:text-light-0
-                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-dark-0 print:bg-black"
-                  href="https://abolfazlamiri.ir"
-                  title="Webpage">
-                  <i className="fas fa-globe-americas text-light-0 mr-1.5" />{" "}
-                  abolfazlamiri.ir
-                </a>
-              </div>
-              <div className="mb-2 print:mb-1.5">
-                <a
-                  className="block max-w-[243px] px-3 py-0.5 font-bold bg-red-0 rounded-full print:text-light-0
-                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-red-0"
-                  href="mailto:aasmpro@gmail.com"
-                  title="Email">
-                  <i className="fas fa-at text-light-0 mr-1.5" />{" "}
-                  aasmpro@gmail.com
-                </a>
-              </div>
-              <div className="mb-2 print:mb-1.5">
-                <a
-                  className="block max-w-[243px] px-3 py-0.5 font-bold bg-yellow-0 rounded-full print:text-light-0
-                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-yellow-0 print:bg-yellow-0"
-                  href="tel:+989217214929"
-                  title="Phone">
-                  <i className="fas fa-phone text-light-0 mr-1.5" />{" "}
-                  +989217214929
-                </a>
-              </div>
+              {["Webpage", "Email", "Phone"].map((name) => (
+                <div className="mb-2 print:mb-1.5">
+                  <LinkButtonName
+                    name={name}
+                    className={`block max-w-[243px] px-3 py-0.5 font-bold print:text-light-0 ${
+                      name === "Webpage" ? "print:bg-black" : ""
+                    }`}
+                    iconClassName="text-light-0 mr-3"
+                  />
+                </div>
+              ))}
               <div className="flex flex-wrap">
-                <a
-                  className="px-3.5 mr-2 py-0.5 font-bold bg-dark-0 rounded-full print:text-light-0
-                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-dark-0"
-                  href="https://github.com/aasmpro"
-                  title="Github">
-                  <i className="fab fa-github-alt text-light-0" />
-                </a>
-                <a
-                  className="px-3.5 mr-2 py-0.5 font-bold bg-orange-0 rounded-full print:text-light-0
-                  transition duration-300 hover:bg-black hover:ring-2 hover:ring-orange-0"
-                  href="https://stackoverflow.com/users/6484831/aasmpro"
-                  title="Stackoverflow">
-                  <i className="fab fa-stack-overflow text-light-0" />
-                </a>
-                <a
-                  className="px-3.5 mr-2 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
-                  transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
-                  href="https://www.linkedin.com/in/aasmpro/"
-                  title="Linkedin">
-                  <i className="fab fa-linkedin-in text-light-0" />
-                </a>
-                <a
-                  className="px-3.5 mr-2 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
-                  transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
-                  href="https://twitter.com/aasmpro"
-                  title="Twitter">
-                  <i className="fab fa-twitter text-light-0" />
-                </a>
-                <a
-                  className="px-3.5 py-0.5 font-bold bg-blue-0 rounded-full print:text-light-0
-                  transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
-                  href="https://telegram.me/aasmpro/"
-                  title="Telegram">
-                  <i className="fas fa-paper-plane text-light-0 text-sm" />
-                </a>
+                {[
+                  "GitHub",
+                  "StackOverflow",
+                  "LinkedIn",
+                  "Twitter",
+                  "Telegram",
+                ].map((name) => (
+                  <LinkButtonName
+                    name={name}
+                    className={`px-3.5 py-0.5 font-bold print:text-light-0 ${
+                      name !== "Telegram" ? "mr-2" : ""
+                    }`}
+                    iconClassName={`text-light-0 ${
+                      name === "Telegram" ? "text-sm" : ""
+                    }`}
+                    useText={false}
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -173,13 +140,9 @@ export const Resume = () => {
               {translation.get("aboutMe")}
             </p>
             <div className="text-justify">
-              {aboutMe.cover[0]}
-              <a
-                href="https://www.trustyou.com"
-                className="text-blue-0 font-bold">
-                TrustYou
-              </a>
-              {aboutMe.cover[1]}
+              {aboutMe.cover.map((line) => (
+                <span> {line}</span>
+              ))}
               {showDetails ? (
                 <ul className="print:text-xs list-disc pl-4 pt-2 grid md:grid-cols-2 print:sm:grid-cols-2">
                   {aboutMe.info.map((info) => (
@@ -259,13 +222,13 @@ export const Resume = () => {
                     {exp.links?.length > 0 ? (
                       <div className="flex flex-row flex-wrap">
                         {exp.links.map((link) => (
-                          <a
-                            className="px-3 py-0.5 mx-1 my-1 font-bold bg-blue-0 rounded-full print:text-light-0
-                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0
-                            print:text-sm print:px-2 print:py-0"
-                            href={link.href}>
-                            {link.title}
-                          </a>
+                          <LinkButton
+                            className="px-3 py-0.5 mx-1 my-1 font-bold print:text-light-0 print:text-sm print:px-2 print:py-0"
+                            bgColor="bg-blue-0"
+                            ringColor="ring-blue-0"
+                            href={link.href}
+                            text={link.title}
+                          />
                         ))}
                       </div>
                     ) : null}
@@ -303,66 +266,6 @@ export const Resume = () => {
                 ))}
             </div>
           </div>
-          {/* Note: Projects been commented instead of been removed from resume */}
-          {/* <div className="py-3 print:text-sm">
-            <p className="mb-3 print:text-xl text-xl font-bold">Projects</p>
-            <div>
-              Check out my site & Github for projects.
-              <div className="flex flex-row flex-wrap mt-2">
-                <a
-                  href="https://abolfazlamiri.ir/#projects"
-                  className="px-3 py-0.5 mx-1 my-1 font-bold bg-blue-0 rounded-full print:text-light-0
-                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0">
-                  abolfazlamiri.ir/#Projects
-                </a>
-                <a
-                  href="https://github.com/aasmpro"
-                  className="px-3 py-0.5 mx-1 my-1 font-bold bg-blue-0 rounded-full print:text-light-0
-                            transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0">
-                  github.com/aasmpro
-                </a>
-              </div>
-            </div>
-          </div> */}
-          {/* Note: Projects been commented instead of been removed from resume */}
-          {/* <div className="py-4 text-sm">
-            <p className="text-xl mb-3 font-bold">Projects</p>
-            <div>
-              {projects
-                .filter((pro) => pro.showExperiences)
-                .sort((a, b) => b.orderExperiences - a.orderExperiences)
-                .map((pro) => (
-                  <div className="py-2 first:pt-0">
-                    <div>
-                      <p className="text-lg font-semibold">{pro.title}</p>
-                    </div>
-                    <div className="text-xs">
-                      {pro.stack.map((stack) => (
-                        <span className="text-green-1 print:text-green-0 font-semibold">
-                          {stack},{" "}
-                        </span>
-                      ))}
-                    </div>
-                    <div className="mt-1 mb-2">
-                      {pro.about.map((line) => (
-                        <p>{line}</p>
-                      ))}
-                    </div>
-                    {pro.links ? (
-                      <div>
-                        <ul className="list-disc pl-3 text-sm">
-                          {pro.links.map((link) => (
-                            <li className="text-blue-0 font-semibold my-0.5 first:mt-0">
-                              <a href={link.href}>{link.title}</a>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ) : null}
-                  </div>
-                ))}
-            </div>
-          </div> */}
         </div>
         <div className="print:hidden pb-20"></div>
       </div>

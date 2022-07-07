@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import { Hero } from "../components/Hero";
+import { LinkButtonName } from "../components/LinkButton";
 
 export const Home = () => {
   return (
@@ -14,117 +14,68 @@ export const Home = () => {
           <p className="mb-4">
             Hi! I'm a Team Leader & Web Developer, currently working as
             FullStack Developer at
-            <a
-              className="mx-2 px-2 bg-blue-0 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-blue-0"
-              href="https://www.trustyou.com">
-              TrustYou
-            </a>
-            , the world's largest feedback platform, aims to optimize the travel
-            experience from the right hotel to the perfect stay.
+            <LinkButtonName
+              name="CurrentCompany"
+              useIcon={false}
+              className="mx-2 px-2"
+            />
+            , the world's largest feedback platform that aims to optimize the
+            travel experience from the right hotel to the perfect stay.
           </p>
           <p className="mb-4">
             Here is my
-            <Link
-              className="mx-2 px-2 bg-light-1 rounded-full text-dark-0 hover:text-light-0
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1"
-              to="/#resume"
-              title="Resume">
-              Resume
-            </Link>
+            <LinkButtonName
+              name="Resume"
+              useIcon={false}
+              className="mx-2 px-2 text-dark-0 hover:text-light-0"
+              useLinkComponent={true}
+            />
             and
-            <Link
-              className="mx-2 px-2 bg-light-1 rounded-full text-dark-0 hover:text-light-0
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1"
-              to="/#projects"
-              title="Projects">
-              Projects
-            </Link>
+            <LinkButtonName
+              name="Projects"
+              useIcon={false}
+              className="mx-2 px-2 text-dark-0 hover:text-light-0"
+              useLinkComponent={true}
+            />
             .
-            {/* also sometimes i write about things on my
-            <Link
-              className="mx-2 px-2 bg-light-1 rounded-full text-dark-0 hover:text-light-0
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1"
-              to="blog/">
-              Blog
-            </Link>
-            . */}
           </p>
           <p className="mb-4">
             I am available to
-            <a
-              className="mx-2 px-2 bg-light-1 rounded-full text-dark-0 hover:text-light-0
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1"
-              href="tel:+989217214929"
-              title="Phone">
-              Talk
-            </a>
+            <LinkButtonName
+              name="Talk"
+              useIcon={false}
+              className="mx-2 px-2 text-dark-0 hover:text-light-0"
+            />
             /
-            <a
-              className="mx-2 px-2 bg-light-1 rounded-full text-dark-0 hover:text-light-0
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-light-1"
-              href="mailto:aasmpro@gmail.com"
-              title="Email">
-              Chat
-            </a>
+            <LinkButtonName
+              name="Chat"
+              useIcon={false}
+              className="mx-2 px-2 text-dark-0 hover:text-light-0"
+            />
             about anything related to tech. it's always a pleasure to meet new
             people ;]
           </p>
           <p>
             Join me to play
-            <a
-              className="mx-2 px-2 bg-green-0 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-green-0"
-              href="https://www.chess.com/member/aasmpro"
-              title="Chess">
-              Chess
-            </a>
+            <LinkButtonName
+              name="Chess"
+              useIcon={false}
+              className="mx-2 px-2"
+            />
             or
-            <a
-              className="mx-2 px-2 bg-red-0 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-red-0"
-              href="https://steamcommunity.com/id/aasmpro/"
-              title="Dota2">
-              Dota2
-            </a>
+            <LinkButtonName
+              name="Dota2"
+              useIcon={false}
+              className="mx-2 px-2"
+            />
             .
           </p>
           <div className="mt-5 flex flex-wrap gap-2 leading-snug">
-            <a
-              className="px-2 bg-dark-0 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-dark-0"
-              href="https://github.com/aasmpro"
-              title="Github">
-              Github
-            </a>
-            <a
-              className="px-2 bg-orange-0 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-orange-0"
-              href="https://stackoverflow.com/users/6484831/aasmpro"
-              title="Stackoverflow">
-              StackOverflow
-            </a>
-            <a
-              className="px-2 bg-blue-0 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-blue-0"
-              href="https://www.linkedin.com/in/aasmpro/"
-              title="Linkedin">
-              LinkedIn
-            </a>
-            <a
-              className="px-2 bg-blue-1 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-blue-1"
-              href="https://twitter.com/aasmpro"
-              title="Twitter">
-              Twitter
-            </a>
-            <a
-              className="px-2 bg-blue-0 rounded-full
-              transition duration-300  hover:bg-black hover:ring-2 hover:ring-blue-0"
-              href="https://telegram.me/aasmpro/"
-              title="Telegram">
-              Telegram
-            </a>
+            {["GitHub", "StackOverflow", "LinkedIn", "Twitter", "Telegram"].map(
+              (name) => (
+                <LinkButtonName name={name} useIcon={false} className="px-2" />
+              )
+            )}
           </div>
         </div>
       </div>
