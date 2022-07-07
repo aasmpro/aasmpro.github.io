@@ -163,7 +163,7 @@ export const Resume = () => {
                   transition duration-300 hover:bg-black hover:ring-2 hover:ring-blue-0"
                   href="https://telegram.me/aasmpro/"
                   title="Telegram">
-                  <i className="fab fa-telegram-plane text-light-0" />
+                  <i className="fas fa-paper-plane text-light-0 text-sm" />
                 </a>
               </div>
             </div>
