@@ -19,7 +19,7 @@ export const LinkButton = ({
   if (useLinkComponent) {
     return (
       <Link
-        className={`rounded-full transition duration-300 ${bgColor} hover:bg-black hover:ring-2 hover:${ringColor} ${className}`}
+        className={`rounded-full transition duration-300 ${bgColor} hover:bg-black hover:ring-2 ${ringColor} ${className}`}
         to={href}
         title={title}>
         {icon && useIcon ? <i className={`${icon} ${iconClassName}`} /> : null}
@@ -29,7 +29,7 @@ export const LinkButton = ({
   }
   return (
     <a
-      className={`rounded-full transition duration-300 ${bgColor} hover:bg-black hover:ring-2 hover:${ringColor} ${className}`}
+      className={`rounded-full transition duration-300 ${bgColor} hover:bg-black hover:ring-2 ${ringColor} ${className}`}
       href={href}
       title={title}>
       {icon && useIcon ? <i className={`${icon} ${iconClassName}`} /> : null}
