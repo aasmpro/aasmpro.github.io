@@ -49,8 +49,8 @@ export const links = {
   },
   Phone: {
     title: "Phone",
-    text: "+989217214929",
-    href: "tel:+989217214929",
+    text: "+4915123176050",
+    href: "tel:+4915123176050",
     icon: "fas fa-phone",
     bgColor: "bg-yellow-0",
     ringColor: "ring-yellow-0",
@@ -58,7 +58,7 @@ export const links = {
   Talk: {
     title: "Phone",
     text: "Talk",
-    href: "tel:+989217214929",
+    href: "tel:+4915123176050",
     icon: "fas fa-phone",
     bgColor: "bg-light-1",
     ringColor: "ring-light-1",
