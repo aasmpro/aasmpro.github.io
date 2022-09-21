@@ -6,8 +6,8 @@ export const aboutMeDE = {
   ],
   info: [
     "Ausbildung: Computertechnik (Associate)",
+    "Location: München, Deutschland",
     "Familienstand: Ledig",
-    "Militärdienst: Befreit",
     "Geburtsdatum: 22 Feb 1996",
   ],
 };

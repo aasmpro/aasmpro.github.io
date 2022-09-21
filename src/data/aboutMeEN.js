@@ -6,8 +6,8 @@ export const aboutMeEN = {
   ],
   info: [
     "Education: Computer Engineering (Associate)",
+    "Location: Munich, Germany",
     "Marriage: Single",
-    "Military Service: Exempted",
     "Birth Date: 22 Feb 1996",
   ],
 };
