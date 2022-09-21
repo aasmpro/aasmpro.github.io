@@ -219,7 +219,7 @@ export const Resume = () => {
                         <span> {line}</span>
                       ))}
                     </div>
-                    {exp.links?.length > 0 ? (
+                    {showDetails && exp.links?.length > 0 ? (
                       <div className="flex flex-row flex-wrap">
                         {exp.links.map((link) => (
                           <LinkButton
