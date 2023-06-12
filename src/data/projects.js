@@ -8,8 +8,8 @@ export const projects = [
     stack: ["Python", "mkdocs", "GruvDoc"],
     links: [
       {
-        title: "abolfazlamiri.ir/python3tutorials/",
-        href: "https://abolfazlamiri.ir/python3tutorials/",
+        title: "amiri.cc/python3tutorials/",
+        href: "https://amiri.cc/python3tutorials/",
         titleInfo: "WebPage",
         icon: "fas fa-link",
         bgColor: "bg-blue-0",
@@ -90,8 +90,8 @@ export const projects = [
     stack: ["Python", "mkdocs", "mkdocs-material"],
     links: [
       {
-        title: "abolfazlamiri.ir/gruvdoc/",
-        href: "https://abolfazlamiri.ir/gruvdoc/",
+        title: "amiri.cc/gruvdoc/",
+        href: "https://amiri.cc/gruvdoc/",
         titleInfo: "WebPage",
         icon: "fas fa-link",
         bgColor: "bg-green-0",
@@ -235,8 +235,8 @@ export const projects = [
     stack: ["Python", "mkdocs"],
     links: [
       {
-        title: "abolfazlamiri.ir/dotfiles/",
-        href: "https://abolfazlamiri.ir/dotfiles/",
+        title: "amiri.cc/dotfiles/",
+        href: "https://amiri.cc/dotfiles/",
         titleInfo: "WebPage",
         icon: "fas fa-link",
         bgColor: "bg-dark-0",
@@ -264,8 +264,8 @@ export const projects = [
     stack: ["JS/TS", "React", "antd"],
     links: [
       {
-        title: "abolfazlamiri.ir/randomize/",
-        href: "https://abolfazlamiri.ir/randomize/",
+        title: "amiri.cc/randomize/",
+        href: "https://amiri.cc/randomize/",
         titleInfo: "WebPage",
         icon: "fas fa-link",
         bgColor: "bg-red-0",
@@ -293,8 +293,8 @@ export const projects = [
     stack: ["Python", "JS", "Vue", "Bootstrap"],
     links: [
       {
-        title: "abolfazlamiri.ir/truthordare/",
-        href: "https://abolfazlamiri.ir/truthordare/",
+        title: "amiri.cc/truthordare/",
+        href: "https://amiri.cc/truthordare/",
         titleInfo: "WebPage",
         icon: "fas fa-link",
         bgColor: "bg-red-0",
@@ -341,8 +341,8 @@ export const projects = [
     stack: ["JS/TS", "Vue", "Bootstrap"],
     links: [
       {
-        title: "abolfazlamiri.ir/huntthewumpus/",
-        href: "https://abolfazlamiri.ir/huntthewumpus/",
+        title: "amiri.cc/huntthewumpus/",
+        href: "https://amiri.cc/huntthewumpus/",
         titleInfo: "WebPage",
         icon: "fas fa-link",
         bgColor: "bg-red-0",
@@ -451,13 +451,13 @@ export const projects = [
     showExperiences: true,
   },
   {
-    title: "AbolfazlAmiri.ir",
+    title: "amiri.cc",
     about: ["Current site! ;] my resume and portfolio. Hosted by github pages."],
     stack: ["React", "Tailwind"],
     links: [
       {
-        title: "abolfazlamiri.ir",
-        href: "https://abolfazlamiri.ir",
+        title: "amiri.cc",
+        href: "https://amiri.cc",
         titleInfo: "WebPage",
         icon: "fas fa-link",
         bgColor: "bg-orange-0",

@@ -4,20 +4,19 @@ import { Char, getCharsMatrix, setCharsMatrix } from "./Char";
 
 let charsMatrix = getCharsMatrix(31, 61);
 
-charsMatrix[15][26] = <Char value="I" />;
-charsMatrix[15][27] = <Char value="'" />;
-charsMatrix[15][28] = <Char value="M" />;
+charsMatrix[15][29] = <Char value="I" />;
+charsMatrix[15][30] = <Char value="'" />;
+charsMatrix[15][31] = <Char value="M" />;
 
 charsMatrix[22][30] = <Char value="↓" />;
 
 const values = [
-  ["ABOLFAZL", ""],
-  ["A WEB", "DEVELOPER"],
-  ["A TEAM", "  LEADER"],
-  ["A CHESS", "  LOVER"],
-  ["A PYTHON-", "  ISTA"],
-  ["A GAMER", ""],
-  ["A FOOD", "  LOVER"],
+  ["   RO∙", "   ∙SS"],
+  ["   WEB", "DEVELOPER"],
+  ["  CHESS", "  LOVER"],
+  [" PYTHON-", " ISTA"],
+  ["  GAMER", ""],
+  [" AASMPRO", "   TOO"],
 ];
 
 const length = values.length;

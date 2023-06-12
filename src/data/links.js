@@ -25,8 +25,8 @@ export const links = {
   },
   Webpage: {
     title: "Webpage",
-    text: "abolfazlamiri.ir",
-    href: "https://abolfazlamiri.ir",
+    text: "amiri.cc",
+    href: "https://amiri.cc",
     icon: "fas fa-globe-americas",
     bgColor: "bg-dark-0",
     ringColor: "ring-dark-0",
@@ -110,6 +110,14 @@ export const links = {
     icon: "fas fa-paper-plane",
     bgColor: "bg-blue-0",
     ringColor: "ring-blue-0",
+  },
+  Instagram: {
+    title: "Instagram",
+    text: "Instagram",
+    href: "https://www.instagram.com/aasmpro/",
+    icon: "fab fa-instagram",
+    bgColor: "bg-red-0",
+    ringColor: "ring-red-0",
   },
   Chess: {
     title: "Chess",

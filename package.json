@@ -1,6 +1,6 @@
 {
-  "name": "abolfazlamiri",
-  "version": "2.3.0",
+  "name": "amiri",
+  "version": "3.0.0",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",

@@ -12,11 +12,13 @@ export const experiencesEN = [
       "As a result, travel websites can improve the travel planning process and hotels can offer their guests the best possible experience.",
     ],
     responsible: "Responsibilities:",
-    responsibilities: [
-      "Develop and maintain projects on Shared Components and Inbox teams",
-    ],
+    responsibilities: [],
     contribution: "Contributions:",
-    contributions: [],
+    contributions: [
+      "Develop & maintain direct response features for Google and Booking.com",
+      "Maintain & refactor legacy apps like Alerting system",
+      "Maintain & refactor operations system",
+    ],
     achievement: "Achievements:",
     achievements: [],
     stack: [

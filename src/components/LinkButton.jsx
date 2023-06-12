@@ -31,7 +31,10 @@ export const LinkButton = ({
     <a
       className={`rounded-full transition duration-300 ${bgColor} hover:bg-black hover:ring-2 ${ringColor} ${className}`}
       href={href}
-      title={title}>
+      title={title}
+      target="_blank"
+      rel="noreferrer"
+      >
       {icon && useIcon ? <i className={`${icon} ${iconClassName}`} /> : null}
       {text && useText ? text : null}
     </a>

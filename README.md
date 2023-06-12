@@ -1,3 +1,3 @@
-# AbolfazlAmiri.ir
+# amiri.cc
 
 my personal site/resume :]

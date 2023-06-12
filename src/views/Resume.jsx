@@ -77,7 +77,7 @@ export const Resume = () => {
                 <a
                   className="ml-2 px-3 py-0.5 bg-yellow-0 rounded-full
               transition duration-300  hover:bg-black hover:ring-2 hover:ring-yellow-0"
-                  href="/AbolfazlAmiri.EN.pdf"
+                  href="/RossAmiri.EN.pdf"
                   target="_blank">
                   Download
                 </a>
@@ -85,7 +85,7 @@ export const Resume = () => {
                 <a
                   className="ml-2 px-3 py-0.5 bg-yellow-0 rounded-full
               transition duration-300  hover:bg-black hover:ring-2 hover:ring-yellow-0"
-                  href="/AbolfazlAmiri.DE.pdf"
+                  href="/RossAmiri.DE.pdf"
                   target="_blank">
                   Download
                 </a>
@@ -97,7 +97,7 @@ export const Resume = () => {
           <div className="pb-4 flex flex-col justify-between md:flex-row print:flex-row">
             <div>
               <p className="print:text-4xl text-4xl font-bold">
-                Abolfazl Amiri
+                Ross Amiri
               </p>
               <p className="print:text-2xl text-2xl">{aboutMe.title}</p>
             </div>
@@ -106,7 +106,7 @@ export const Resume = () => {
                 <div className="mb-2 print:mb-1.5">
                   <LinkButtonName
                     name={name}
-                    className={`block max-w-[243px] px-3 py-0.5 font-bold print:text-light-0 ${
+                    className={`block max-w-[295px] px-3 py-0.5 font-bold print:text-light-0 ${
                       name === "Webpage" ? "print:bg-black" : ""
                     }`}
                     iconClassName="text-light-0 mr-3"
@@ -116,9 +116,10 @@ export const Resume = () => {
               <div className="flex flex-wrap">
                 {[
                   "GitHub",
-                  "StackOverflow",
                   "LinkedIn",
+                  "Instagram",
                   "Twitter",
+                  "StackOverflow",
                   "Telegram",
                 ].map((name) => (
                   <LinkButtonName
@@ -143,13 +144,13 @@ export const Resume = () => {
               {aboutMe.cover.map((line) => (
                 <span> {line}</span>
               ))}
-              {showDetails ? (
-                <ul className="print:text-xs list-disc pl-4 pt-2 grid md:grid-cols-2 print:sm:grid-cols-2">
+              {/* {showDetails ? (
+                <ul className="print:text-xs list-disc pl-4 pt-2 grid md:grid-cols-2 print:grid-cols-2">
                   {aboutMe.info.map((info) => (
                     <li>{info}</li>
                   ))}
                 </ul>
-              ) : null}
+              ) : null} */}
             </div>
           </div>
           <div className="py-4 print:text-sm">
@@ -157,7 +158,7 @@ export const Resume = () => {
               {translation.get("skills")}
             </p>
             <p className="mb-2">{skills.title}</p>
-            <ul className="list-disc pl-4 grid sm:grid-cols-2 md:grid-cols-3 print:sm:grid-cols-3">
+            <ul className="list-disc pl-4 grid sm:grid-cols-2 md:grid-cols-3 print:grid-cols-3">
               {skills.data.map((skill) => (
                 <li>{skill}</li>
               ))}
@@ -183,7 +184,7 @@ export const Resume = () => {
                         <p className="print:text-base font-semibold">
                           {exp.company}
                         </p>
-                        <div className="whitespace-nowrap sm:hidden">
+                        <div className="whitespace-nowrap sm:hidden print:hidden">
                           <p className="print:text-xs text-sm font-semibold">
                             {exp.startDate} - {exp.endDate}
                           </p>
@@ -202,7 +203,7 @@ export const Resume = () => {
                           ))}
                         </div>
                       </div>
-                      <div className="text-right whitespace-nowrap hidden sm:block">
+                      <div className="text-right whitespace-nowrap hidden sm:block print:block">
                         <p className="print:text-xs text-sm font-semibold">
                           {exp.startDate} - {exp.endDate}
                         </p>

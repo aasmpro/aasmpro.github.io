@@ -12,11 +12,13 @@ export const experiencesDE = [
       "Das Ergebnis ist, können Reise-Webseiten den Reiseplanungs-Prozess verbessern und Hotels können ihren Gästen das bestmögliche Erfahrung bieten.",
     ],
     responsible: "Zuständigkeiten:",
-    responsibilities: [
-      "Entwicklung und Pflege von Projekten in den Teams Gemeinsame Komponenten und Inbox Teams.",
-    ],
+    responsibilities: [],
     contribution: "Beiträge:",
-    contributions: [],
+    contributions: [
+      "Entwickeln und pflegen Sie Direct-Response-Funktionen für Google und Booking.com",
+      "Pflegen und überarbeiten Sie ältere Apps wie das Warnsystem",
+      "Pflegen und überarbeiten Sie das Betriebssystem",
+    ],
     achievement: "Errungenschaften:",
     achievements: [],
     stack: [

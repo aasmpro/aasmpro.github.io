@@ -71,11 +71,16 @@ export const Home = () => {
             .
           </p>
           <div className="mt-5 flex flex-wrap gap-2 leading-snug">
-            {["GitHub", "StackOverflow", "LinkedIn", "Twitter", "Telegram"].map(
-              (name) => (
-                <LinkButtonName name={name} useIcon={false} className="px-2" />
-              )
-            )}
+            {[
+              "GitHub",
+              "LinkedIn",
+              "Instagram",
+              "Twitter",
+              "StackOverflow",
+              "Telegram",
+            ].map((name) => (
+              <LinkButtonName name={name} useIcon={false} className="px-2" />
+            ))}
           </div>
         </div>
       </div>
