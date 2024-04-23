@@ -1,83 +1,70 @@
-import React, { useState, useEffect } from "react";
-import { randomChar } from "../utils/randomChar";
+import React, { useState, useEffect } from 'react';
+import { randomChar } from 'utils/randomChar';
 
-export const Char = (props) => {
-  const [color, setColor] = useState("text-dark-0");
+export function Char({ value }) {
+  const [color, setColor] = useState('dark');
   const [char, setChar] = useState(randomChar());
 
   const changeColor = () => {
-    if (char === "0" || char === "1") {
-      if (color === "text-red-0") {
-        setColor("text-dark-0");
-      } else {
-        setColor("text-red-0");
-      }
+    if (value) return;
+    if (char === '0' || char === '1') {
+      setColor(color === 'red' ? 'dark' : 'red');
     }
   };
 
+  const classes = `select-none px-2 text-2xl font-bold text-${value ? 'light' : color}-0`;
+
   useEffect(() => {
-    const interval = setInterval(() => {
-      setChar((char) => (char !== "0" && char !== "1" ? randomChar() : char));
-    }, Math.floor(Math.random() * 30000) + 2000);
+    const interval = setInterval(
+      () => {
+        setChar((currentChar) =>
+          currentChar !== '0' && currentChar !== '1' ? randomChar() : currentChar
+        );
+      },
+      Math.floor(Math.random() * 30_000) + 2000
+    );
     return () => clearInterval(interval);
-    // eslint-disable-next-line
   }, []);
 
-  if (props.value) {
-    if (props.value === "↓") {
-      return (
-        <a href="#info" title="scroll down!">
-          <span className="select-none px-2 text-2xl font-bold text-light-0 mr-3.5">
-            <span className="animate-bounce absolute mt-1">{props.value}</span>
-          </span>
-        </a>
-      );
-    }
+  if (value === '↓') {
     return (
-      <span className="select-none px-2 text-2xl font-bold text-light-0">
-        {props.value}
-      </span>
+      <a href='#info' title='Scroll Down!'>
+        <span className={classes}>
+          <span className='animate-bounce absolute mt-1 mr-3.5'>{value}</span>
+        </span>
+      </a>
     );
   }
 
   return (
-    <span
-      className={`select-none px-2 text-2xl font-bold ${color}`}
-      onClick={changeColor}>
-      {char}
-    </span>
+    <button type='button' className={classes} onClick={changeColor}>
+      {value || char}
+    </button>
   );
-};
+}
 
 export const getCharsMatrix = (row, col) => {
-  let charsMatrix = [];
-  for (var i = 0; i < row; i++) {
-    let _row = [];
-    for (var j = 0; j < col; j++) {
-      _row.push(<Char />);
+  const charsMatrix = [];
+  for (let index = 0; index < row; index++) {
+    const matrixRow = [];
+    for (let insideIndex = 0; insideIndex < col; insideIndex++) {
+      matrixRow.push(<Char />);
     }
-    charsMatrix.push(_row);
+    charsMatrix.push(matrixRow);
   }
   return charsMatrix;
 };
 
-export const setCharsMatrix = (
-  charsMatrix,
-  values,
-  from_row,
-  to_row,
-  from_col,
-  to_col
-) => {
-  for (var i = from_row; i < to_row; i++) {
-    for (var j = from_col; j < to_col; j++) {
+export const setCharsMatrix = (charsMatrix, values, fromRow, toRow, fromCol, toCol) => {
+  for (let index = fromRow; index < toRow; index++) {
+    for (let insideIndex = fromCol; insideIndex < toCol; insideIndex++) {
       let char = null;
       try {
-        char = values[i - from_row][j - from_col];
+        char = values[index - fromRow][insideIndex - fromCol];
       } catch {}
       try {
-        charsMatrix[i][j] =
-          char && char !== " " ? <Char value={char} /> : <Char />;
+        charsMatrix[index][insideIndex] =
+          char && char !== ' ' ? <Char value={char} /> : <Char />;
       } catch {}
     }
   }

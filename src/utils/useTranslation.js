@@ -1,27 +1,30 @@
-import { useState } from "react";
-import { translations } from "../data";
+import { useState } from 'react';
+import { translations } from 'data';
+
+const setLanguageStorage = (language) => {
+  localStorage.setItem('language', language);
+};
 
 export const useTranslation = () => {
   const languages = {
-    English: "EN",
-    German: "DE",
+    English: 'EN',
+    German: 'DE'
   };
 
   const defaultLanguage = languages.English;
 
-  const setLanguageStorage = (language) => {
-    localStorage.setItem("language", language);
-  };
-
   const languageStorage = () => {
-    switch (localStorage.getItem("language")) {
-      case languages.English:
+    switch (localStorage.getItem('language')) {
+      case languages.English: {
         return languages.English;
-      case languages.German:
+      }
+      case languages.German: {
         return languages.German;
-      default:
+      }
+      default: {
         setLanguageStorage(defaultLanguage);
         return defaultLanguage;
+      }
     }
   };
 
@@ -30,16 +33,16 @@ export const useTranslation = () => {
   const isEnglish = language === languages.English;
   const isGerman = language === languages.German;
 
-  const setLanguage = (language) => {
-    setLanguageState(language);
-    setLanguageStorage(language);
+  const setLanguage = (lang) => {
+    setLanguageState(lang);
+    setLanguageStorage(lang);
   };
 
   const get = (data) => {
-    if (typeof data === "string") {
+    if (typeof data === 'string') {
       try {
         return translations[data][language];
-      } catch (error) {
+      } catch {
         return data;
       }
     } else {
@@ -75,6 +78,6 @@ export const useTranslation = () => {
     setGerman,
     isEnglish,
     isGerman,
-    toggle,
+    toggle
   };
 };

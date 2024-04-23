@@ -1,9 +1,10 @@
-import React from "react";
+/* eslint-disable */
+import React from 'react';
 
-import { Link } from "react-router-dom";
-import { links } from "../data";
+import { Link } from 'react-router-dom';
+import { links } from 'data';
 
-export const LinkButton = ({
+export function LinkButton({
   className,
   href,
   title,
@@ -14,14 +15,15 @@ export const LinkButton = ({
   useIcon = true,
   bgColor,
   ringColor,
-  useLinkComponent = false,
-}) => {
+  useLinkComponent = false
+}) {
   if (useLinkComponent) {
     return (
       <Link
         className={`rounded-full transition duration-300 ${bgColor} hover:bg-black hover:ring-2 ${ringColor} ${className}`}
         to={href}
-        title={title}>
+        title={title}
+      >
         {icon && useIcon ? <i className={`${icon} ${iconClassName}`} /> : null}
         {text && useText ? text : null}
       </Link>
@@ -32,16 +34,16 @@ export const LinkButton = ({
       className={`rounded-full transition duration-300 ${bgColor} hover:bg-black hover:ring-2 ${ringColor} ${className}`}
       href={href}
       title={title}
-      target="_blank"
-      rel="noreferrer"
-      >
+      target='_blank'
+      rel='noreferrer'
+    >
       {icon && useIcon ? <i className={`${icon} ${iconClassName}`} /> : null}
       {text && useText ? text : null}
     </a>
   );
-};
+}
 
-export const LinkButtonName = ({
+export function LinkButtonName({
   name,
   className,
   iconClassName,
@@ -49,8 +51,8 @@ export const LinkButtonName = ({
   title,
   useText = true,
   useIcon = true,
-  useLinkComponent = false,
-}) => {
+  useLinkComponent = false
+}) {
   return (
     <LinkButton
       {...links[name]}
@@ -63,4 +65,4 @@ export const LinkButtonName = ({
       useLinkComponent={useLinkComponent}
     />
   );
-};
+}

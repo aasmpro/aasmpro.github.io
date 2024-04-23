@@ -1,10 +1,12 @@
-@import "./fonts.jbm.css";
+@import './fonts.jbm.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  background-color: #000;
 }
 
 * {
@@ -18,7 +20,7 @@ html {
 @media print {
   html,
   body {
-    background-color: #ffffff !important;
+    background-color: #ffffff;
   }
   * {
     @apply text-black;

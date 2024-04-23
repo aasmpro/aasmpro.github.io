@@ -1,22 +1,22 @@
 export const translations = {
   Home: {
-    EN: "Home",
-    DE: "Heim",
+    EN: 'Home',
+    DE: 'Heim'
   },
   aboutMe: {
-    EN: "About Me",
-    DE: "Über Mich",
+    EN: 'About Me',
+    DE: 'Über Mich'
   },
   skills: {
-    EN: "Skills",
-    DE: "Fertigkeiten",
+    EN: 'Skills',
+    DE: 'Fertigkeiten'
   },
   experiences: {
-    EN: "Experiences",
-    DE: "Erfahrungen",
+    EN: 'Experiences',
+    DE: 'Erfahrungen'
   },
   projects: {
-    EN: "Projects",
-    DE: "Projekte",
-  },
+    EN: 'Projects',
+    DE: 'Projekte'
+  }
 };

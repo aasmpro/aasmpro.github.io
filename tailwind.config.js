@@ -3,8 +3,7 @@ module.exports = {
     "./src/data/*.js",
     "./src/views/*.{js,jsx}",
     "./src/components/*.{js,jsx}",
-    "./src/Main.jsx",
-    "./src/index.js",
+    "./src/*.{js, jsx}"
   ],
   theme: {
     colors: {
