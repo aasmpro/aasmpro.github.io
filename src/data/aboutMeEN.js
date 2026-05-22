@@ -1,12 +1,12 @@
 export const aboutMeEN = {
-  title: "Python & Web Developer",
+  title: "Senior Software Engineer",
   cover: [
-    "Hi! I'm a Team Leader & Web Developer, currently working as FullStack Developer at TrustYou, the world's largest feedback platform.",
-    "I have more than 6 years of experience in software development mainly in Web Development, and around 3 years of leading the tech teams. My aim is to enhance user experience and create new values in addition to delivering a clean scalable code, by being closely in touch with the end-users. I can easily make strong sincere relations with my team and help them to develop themselves. I'm a self-learner, without prejudice on tools and tech stacks, and ready for new challenges.",
+    "Hi! I’m a Senior Software Engineer with 9+ years of experience, mostly focused on web development and leading technical teams.",
+    "My aim is to enhance user experience and create meaningful value by staying closely connected with end users, while delivering clean, scalable code. I build strong, genuine relationships with my team and support their growth and development. I am a self-learner, open-minded about tools and technology stacks, and always ready for new challenges.",
   ],
   info: [
     "Education: Computer Engineering (Associate)",
-    "Location: Munich, Germany",
+    "Location: Berlin, Germany",
     "Marriage: Single",
     "Birth Date: 22 Feb 1996",
   ],

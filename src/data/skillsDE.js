@@ -2,14 +2,14 @@ export const skillsDE = {
   title:
     "Kurz gesagt, ich habe bereits Erfahrung mit diesen Tools und benutze sie häufig:",
   data: [
-    "Python",
-    "Django, FastAPI",
-    "JS, TS",
-    "React",
-    "Sass, Tailwind",
-    "Docker",
+    "Python, JS/TS",
+    "Django, FastAPI, Pandas",
+    "React, Next.js",
+    "Systemdesign, Architektur",
+    "Docker, Kubernetes",
     "GitHub/GitLab CI/CD",
-    "Linux Servers",
-    "Ein bisschen DevOps ;)",
+    "Linux, Nginx, DevOps Grundlagen",
+    "AI-gestützte Entwicklung, Claude Code",
+    "Integration von LLM-Features",
   ],
 };

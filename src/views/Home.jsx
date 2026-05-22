@@ -12,15 +12,7 @@ export const Home = () => {
         className="min-h-screen flex flex-col justify-center items-center">
         <div className="sm:w-[500px] w-screen p-5 py-20 text-lg select-none">
           <p className="mb-4">
-            Hi! I'm a Team Leader & Web Developer, currently working as
-            FullStack Developer at
-            <LinkButtonName
-              name="CurrentCompany"
-              useIcon={false}
-              className="mx-2 px-2"
-            />
-            , the world's largest feedback platform that aims to optimize the
-            travel experience from the right hotel to the perfect stay.
+            Hi! I’m a Senior Software Engineer with 9+ years of experience, mostly focused on web development and leading technical teams.
           </p>
           <p className="mb-4">
             Here is my
