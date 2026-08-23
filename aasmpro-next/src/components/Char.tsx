@@ -1,67 +1,66 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { randomChar } from "@/utils/randomChar";
 
-const ALL_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+export const ALL_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
-interface CharProps {
-  char: string;
-  id: number;
-  delay: number;
-  color: string;
+export interface CharProps {
+  value?: string;
 }
 
-export function Char({ char, id, delay, color }: CharProps) {
-  const [text, setText] = React.useState(char);
-  const [opacity, setOpacity] = React.useState(1);
-  const [currentColor, setCurrentColor] = React.useState(color);
+export function Char({ value }: CharProps) {
+  const [char, setChar] = useState(randomChar);
+  const [color, setColor] = useState<string>("text-dark-0");
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (text !== char) {
-        setOpacity(0);
-        setTimeout(() => {
-          setText(char);
-          setCurrentColor(color);
-          setOpacity(1);
-        }, delay);
-      } else {
-        setText(randomChar());
-      }
-    }, delay);
+    if (value) return;
+    const id = setInterval(() => setChar(randomChar), Math.floor(Math.random() * 30000) + 2000);
+    return () => clearInterval(id);
+  }, [value]);
 
-    return () => clearInterval(interval);
-  }, [char, id, delay, color]);
+  useEffect(() => {
+    if (value || (char !== "0" && char !== "1")) return;
+    setColor((c) => (c === "text-red-0" ? "text-dark-0" : "text-red-0"));
+  }, [char, value]);
+
+  if (value) {
+    if (value === "↓") {
+      return (
+        <a href="#info" title="scroll down!">
+          <span className="select-none px-2 text-2xl font-bold text-light-0 mr-3.5 relative">
+            <span className="animate-bounce absolute mt-1">{value}</span>
+          </span>
+        </a>
+      );
+    }
+    return (
+      <span className="select-none px-2 text-2xl font-bold text-light-0">
+        {value}
+      </span>
+    );
+  }
 
   return (
     <span
-      className="inline-block"
-      style={{
-        opacity: opacity,
-        color: currentColor,
-        transition: "opacity 0.2s",
-        WebkitTransition: "opacity 0.2s",
-        MozTransition: "opacity 0.2s",
-        msTransition: "opacity 0.2s",
-        OTransition: "opacity 0.2s",
+      className={`select-none px-2 text-2xl font-bold ${color}`}
+      onClick={() => {
+        if (char === "0" || char === "1") {
+          setColor((c) => (c === "text-red-0" ? "text-dark-0" : "text-red-0"));
+        }
       }}
     >
-      {text}
+      {char}
     </span>
   );
 }
 
-/**
- * Creates a 2D matrix (rows x cols) filled with random characters.
- * Pure utility — no side effects, no React state.
- */
-export function getCharsMatrix(rows: number, columns: number): string[][] {
-  const matrix: string[][] = [];
+export function getCharsMatrix(rows: number, columns: number): React.ReactElement[][] {
+  const matrix: React.ReactElement[][] = [];
   for (let r = 0; r < rows; r++) {
-    const row: string[] = [];
+    const row: React.ReactElement[] = [];
     for (let c = 0; c < columns; c++) {
-      row.push(randomChar());
+      row.push(<Char key={`${r}-${c}`} />);
     }
     matrix.push(row);
   }
