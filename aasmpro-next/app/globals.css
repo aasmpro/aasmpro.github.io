@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-0: #1d2021;
+  --color-dark-1: #282828;
+  --color-dark-2: #32302f;
+  --color-dark-3: #3c3836;
+  --color-dark-4: #504945;
+  --color-dark-5: #665c54;
+  --color-light-0: #f9f5d7;
+  --color-light-1: #fbf1c7;
+  --color-light-2: #f2e5bc;
+  --color-light-3: #ebdbb2;
+  --color-light-4: #d5c4a1;
+  --color-light-5: #bdae93;
+  --color-gray-0: #7c6f64;
+  --color-gray-1: #928374;
+  --color-gray-2: #a89984;
+  --color-red-0: #9d0006;
+  --color-red-1: #cc241d;
+  --color-red-2: #fb4934;
+  --color-green-0: #79740e;
+  --color-green-1: #98971a;
+  --color-green-2: #b8bb26;
+  --color-yellow-0: #b57614;
+  --color-yellow-1: #d79921;
+  --color-yellow-2: #fabd2f;
+  --color-blue-0: #076678;
+  --color-blue-1: #458588;
+  --color-blue-2: #83a598;
+  --color-purple-0: #8f3f71;
+  --color-purple-1: #b16286;
+  --color-purple-2: #d3869b;
+  --color-aqua-0: #427b58;
+  --color-aqua-1: #689d6a;
+  --color-aqua-2: #8ec07c;
+  --color-orange-0: #af3a03;
+  --color-orange-1: #d65d0e;
+  --color-orange-2: #fe8019;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #000;
+}
+
+* {
+  color: var(--color-light-0);
+  font-family: JBM, "JetBrains Mono", monospace;
+  letter-spacing: -0.6px;
+  word-spacing: -3px;
+  line-height: 1.4;
+}
+
+a {
+  color: #f9f5d7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fbf1c7;
+}
+
+@media print {
+  html,
+  body {
+    background-color: #ffffff !important;
+  }
+  * {
+    color: #000000;
+    font-family: JBM, "JetBrains Mono", monospace;
+  }
+}
